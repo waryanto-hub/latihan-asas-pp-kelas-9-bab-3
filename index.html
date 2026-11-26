@@ -1,0 +1,1808 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Latihan Soal ASAS - Pendidikan Pancasila Kelas IX Bab 3</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            gold: {
+              50: '#fffbeb',
+              100: '#fef3c7',
+              200: '#fde68a',
+              300: '#fcd34d',
+              400: '#fbbf24',
+              500: '#f59e0b',
+              600: '#d97706',
+              700: '#b45309',
+              800: '#92400e',
+              900: '#78350f',
+            }
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    html, body {
+      font-family: 'Inter', sans-serif;
+      background-color: #fffdf7;
+      color: #1f2937;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+    /* Custom scrollbar kuning keemasan agar ramah iframe */
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #fef3c7;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #d97706;
+      border-radius: 9999px;
+    }
+    .option-card {
+      transition: all 0.18s ease-in-out;
+    }
+    .option-card:hover:not(.disabled-opt) {
+      transform: translateY(-1px);
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-amber-200 selection:text-amber-950">
+
+  <!-- HEADER UTAMA (URUTAN 3 BARIS PERSIS SESUAI PEDOMAN) -->
+  <header class="bg-gradient-to-r from-amber-600 via-yellow-500 to-amber-600 text-white shadow-md border-b-4 border-amber-800">
+    <div class="max-w-6xl mx-auto px-4 py-5 sm:py-6 text-center">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-900/30 border border-amber-200/40 text-amber-50 text-xs font-semibold tracking-wider uppercase mb-2">
+        <span>Asesmen Sumatif Akhir Semester</span>
+        <span>•</span>
+        <span>Literasi &amp; Numerasi HOTS</span>
+      </div>
+      <h1 class="text-xl sm:text-2xl md:text-3xl font-extrabold tracking-tight uppercase drop-shadow-sm">
+        LATIHAN SOAL ASAS
+      </h1>
+      <h2 class="text-base sm:text-lg md:text-xl font-bold text-amber-50 mt-0.5 uppercase tracking-wide">
+        PENDIDIKAN PANCASILA KELAS IX
+      </h2>
+      <p class="text-xs sm:text-sm md:text-base font-medium text-amber-100 mt-1 max-w-3xl mx-auto">
+        BAB 3 : KEMERDEKAAN BERPENDAPAT WARGA NEGARA PADA ERA KETERBUKAAN INFORMASI
+      </p>
+    </div>
+  </header>
+
+  <!-- KONTEN UTAMA -->
+  <main class="flex-grow max-w-6xl w-full mx-auto px-3 sm:px-5 py-5">
+
+    <!-- LAYAR AWAL: PILIH MODE -->
+    <section id="start-screen" class="bg-white rounded-2xl shadow-sm border border-amber-200 p-5 sm:p-8 max-w-4xl mx-auto">
+      <div class="text-center mb-6">
+        <span class="inline-block px-3 py-1 rounded-lg bg-amber-100 text-amber-800 font-bold text-xs uppercase tracking-wider mb-2">
+          Petunjuk &amp; Pemilihan Mode
+        </span>
+        <h3 class="text-xl sm:text-2xl font-extrabold text-gray-900">
+          Selamat Datang di Ruang Latihan Interaktif
+        </h3>
+        <p class="text-sm sm:text-base text-gray-600 mt-2 max-w-2xl mx-auto">
+          Paket evaluasi ini memuat <strong>25 soal HOTS (C3–C6)</strong> dengan tingkat kesulitan Sedang hingga Sangat Sulit, terdiri atas <strong>18 Pilihan Ganda</strong> dan <strong>7 Pilihan Ganda Kompleks</strong> berbasis wacana tokoh, infografis sebaran hoaks, tabel kenaikan harga BBM &amp; realisasi APBN, alur aplikasi LAPOR!, dan ilustrasi. Urutan soal serta opsi jawaban otomatis diacak di setiap sesi!
+        </p>
+      </div>
+
+      <!-- Ringkasan Komposisi -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-7">
+        <div class="bg-amber-50/80 border border-amber-200 rounded-xl p-3 text-center">
+          <div class="text-xs text-amber-700 font-semibold uppercase">Total Butir</div>
+          <div class="text-xl font-extrabold text-amber-900 mt-0.5">25 Soal</div>
+        </div>
+        <div class="bg-amber-50/80 border border-amber-200 rounded-xl p-3 text-center">
+          <div class="text-xs text-amber-700 font-semibold uppercase">Bentuk Soal</div>
+          <div class="text-sm sm:text-base font-extrabold text-amber-900 mt-1">18 PG &amp; 7 PGK</div>
+        </div>
+        <div class="bg-amber-50/80 border border-amber-200 rounded-xl p-3 text-center">
+          <div class="text-xs text-amber-700 font-semibold uppercase">Level Kognitif</div>
+          <div class="text-xl font-extrabold text-amber-900 mt-0.5">C3 – C6</div>
+        </div>
+        <div class="bg-amber-50/80 border border-amber-200 rounded-xl p-3 text-center">
+          <div class="text-xs text-amber-700 font-semibold uppercase">Waktu Latihan</div>
+          <div class="text-xl font-extrabold text-amber-900 mt-0.5">60 Menit</div>
+        </div>
+      </div>
+
+      <!-- Pilihan Mode -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
+        <!-- Mode Belajar -->
+        <div class="rounded-2xl border-2 border-amber-300 bg-gradient-to-b from-amber-50 to-white p-5 flex flex-col justify-between hover:border-amber-500 transition shadow-sm">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-3 py-1 rounded-full bg-amber-500 text-white text-xs font-bold uppercase tracking-wide">
+                Direkomendasikan untuk Pemahaman
+              </span>
+              <svg class="w-7 h-7 text-amber-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+              </svg>
+            </div>
+            <h4 class="text-lg sm:text-xl font-extrabold text-gray-900">Mode Belajar</h4>
+            <ul class="text-sm text-gray-700 space-y-2 mt-3">
+              <li class="flex items-start gap-2">
+                <span class="text-amber-600 font-bold">✓</span>
+                <span>Tanpa batas waktu (timer nonaktif) agar kamu fokus menganalisis setiap bacaan dan infografis.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-amber-600 font-bold">✓</span>
+                <span>Tersedia tombol <strong>"Periksa Jawaban"</strong> pada setiap nomor soal.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-amber-600 font-bold">✓</span>
+                <span>Langsung menampilkan status <strong>Benar / Salah</strong> beserta kunci dan pembahasan lengkap.</span>
+              </li>
+            </ul>
+          </div>
+          <button onclick="startQuiz('belajar')" class="mt-6 w-full py-3 px-4 rounded-xl bg-amber-500 hover:bg-amber-600 active:bg-amber-700 text-white font-bold text-sm sm:text-base shadow-sm transition cursor-pointer">
+            Mulai Mode Belajar →
+          </button>
+        </div>
+
+        <!-- Mode Latihan -->
+        <div class="rounded-2xl border-2 border-yellow-400 bg-gradient-to-b from-yellow-50/70 to-white p-5 flex flex-col justify-between hover:border-amber-600 transition shadow-sm">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-3 py-1 rounded-full bg-amber-800 text-amber-50 text-xs font-bold uppercase tracking-wide">
+                Simulasi Ujian ASAS
+              </span>
+              <svg class="w-7 h-7 text-amber-800" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <h4 class="text-lg sm:text-xl font-extrabold text-gray-900">Mode Latihan (Ujian)</h4>
+            <ul class="text-sm text-gray-700 space-y-2 mt-3">
+              <li class="flex items-start gap-2">
+                <span class="text-amber-700 font-bold">✓</span>
+                <span>Dilengkapi penghitung waktu mundur <strong>60 menit</strong> layaknya ujian sekolah sesungguhnya.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-amber-700 font-bold">✓</span>
+                <span>Kunci jawaban &amp; pembahasan disembunyikan selama pengerjaan berlangsung.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-amber-700 font-bold">✓</span>
+                <span>Tersedia fitur <strong>Tandai Ragu-Ragu</strong>, rekap skor akhir, dan tinjauan pembahasan lengkap.</span>
+              </li>
+            </ul>
+          </div>
+          <button onclick="startQuiz('latihan')" class="mt-6 w-full py-3 px-4 rounded-xl bg-amber-800 hover:bg-amber-900 active:bg-amber-950 text-white font-bold text-sm sm:text-base shadow-sm transition cursor-pointer">
+            Mulai Mode Latihan →
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- LAYAR KUIS AKTIF -->
+    <section id="quiz-screen" class="hidden">
+      <!-- Top Control Bar -->
+      <div class="bg-white rounded-2xl border border-amber-200 shadow-sm p-3 sm:p-4 mb-4 flex flex-wrap items-center justify-between gap-3">
+        <div class="flex items-center gap-2 sm:gap-3">
+          <span id="mode-badge" class="px-3 py-1 rounded-lg text-xs font-extrabold uppercase tracking-wider bg-amber-100 text-amber-900 border border-amber-300">
+            MODE BELAJAR
+          </span>
+          <span id="progress-text" class="text-xs sm:text-sm font-semibold text-gray-600">
+            Terjawab: 0 / 25
+          </span>
+        </div>
+
+        <div class="flex items-center gap-2 sm:gap-3">
+          <!-- Timer (Hanya muncul di Mode Latihan) -->
+          <div id="timer-box" class="hidden items-center gap-1.5 px-3 py-1.5 rounded-xl bg-amber-50 border border-amber-300 text-amber-900 font-mono font-bold text-sm">
+            <svg class="w-4 h-4 text-amber-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <span id="timer-display">60:00</span>
+          </div>
+
+          <button onclick="openSwitchModal()" class="px-3 py-1.5 rounded-xl border border-amber-300 bg-amber-50 hover:bg-amber-100 text-amber-900 text-xs sm:text-sm font-semibold transition cursor-pointer">
+            Ganti Mode / Reset
+          </button>
+
+          <button id="finish-btn" onclick="openFinishModal()" class="px-3.5 py-1.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs sm:text-sm font-bold shadow-sm transition cursor-pointer">
+            Selesai &amp; Nilai
+          </button>
+        </div>
+      </div>
+
+      <!-- Grid Utama: Kartu Soal (Kiri/Atas) + Navigasi Nomor (Kanan/Bawah) -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 items-start">
+        
+        <!-- Area Soal (8 Kolom) -->
+        <div class="lg:col-span-8 bg-white rounded-2xl border border-amber-200 shadow-sm p-4 sm:p-6">
+          <!-- Header Soal: Nomor, Tipe, Level Kognitif, Kesulitan -->
+          <div class="flex flex-wrap items-center justify-between gap-2 pb-3 mb-4 border-b border-amber-100">
+            <div class="flex items-center gap-2">
+              <span id="q-number-badge" class="px-3 py-1 rounded-xl bg-amber-500 text-white font-extrabold text-sm">
+                Soal 1 dari 25
+              </span>
+              <span id="q-type-badge" class="px-2.5 py-1 rounded-lg bg-amber-100 text-amber-900 font-bold text-xs">
+                Pilihan Ganda
+              </span>
+            </div>
+            <div class="flex items-center gap-1.5">
+              <span id="q-cog-badge" class="px-2.5 py-1 rounded-lg bg-sky-50 text-sky-800 border border-sky-200 font-bold text-xs">
+                C4 (Analisis)
+              </span>
+              <span id="q-diff-badge" class="px-2.5 py-1 rounded-lg bg-orange-50 text-orange-800 border border-orange-200 font-bold text-xs">
+                Sulit
+              </span>
+            </div>
+          </div>
+
+          <!-- Instruksi Khusus PG Kompleks -->
+          <div id="pgk-instruction" class="hidden mb-4 p-3 rounded-xl bg-amber-50 border-l-4 border-amber-500 text-amber-950 text-xs sm:text-sm font-semibold flex items-center gap-2">
+            <svg class="w-5 h-5 text-amber-600 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <span id="pgk-instruction-text">PILIHAN GANDA KOMPLEKS — Pilihlah lebih dari satu pernyataan yang benar!</span>
+          </div>
+
+          <!-- Kontainer Stimulus -->
+          <div id="stimulus-container" class="mb-5"></div>
+
+          <!-- Pertanyaan -->
+          <div id="question-text" class="text-gray-900 font-semibold text-sm sm:text-base leading-relaxed mb-4"></div>
+
+          <!-- Opsi Jawaban -->
+          <div id="options-container" class="space-y-2.5"></div>
+
+          <!-- Tombol Aksi Soal (Mode Belajar: Periksa Jawaban | Mode Latihan: Tandai Ragu-Ragu) -->
+          <div class="mt-5 pt-4 border-t border-amber-100 flex flex-wrap items-center justify-between gap-3">
+            <div class="flex items-center gap-2">
+              <button id="check-answer-btn" onclick="checkCurrentAnswer()" class="hidden px-4 py-2.5 rounded-xl bg-amber-600 hover:bg-amber-700 text-white font-bold text-xs sm:text-sm shadow-sm transition cursor-pointer">
+                Periksa Jawaban
+              </button>
+              <label id="doubt-checkbox-wrap" class="hidden inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-yellow-50 border border-yellow-300 text-yellow-900 text-xs sm:text-sm font-semibold cursor-pointer select-none">
+                <input type="checkbox" id="doubt-checkbox" onchange="toggleDoubt()" class="w-4 h-4 accent-amber-600 rounded cursor-pointer" />
+                <span>Tandai Ragu-Ragu</span>
+              </label>
+            </div>
+
+            <div class="flex items-center gap-2 ml-auto">
+              <button id="prev-btn" onclick="prevQuestion()" class="px-3.5 py-2 rounded-xl border border-gray-300 bg-white hover:bg-gray-50 disabled:opacity-40 text-gray-700 font-semibold text-xs sm:text-sm transition cursor-pointer">
+                ← Sebelumnya
+              </button>
+              <button id="next-btn" onclick="nextQuestion()" class="px-4 py-2 rounded-xl bg-amber-500 hover:bg-amber-600 disabled:opacity-40 text-white font-bold text-xs sm:text-sm shadow-sm transition cursor-pointer">
+                Berikutnya →
+              </button>
+            </div>
+          </div>
+
+          <!-- Kotak Pembahasan (Muncul saat dicek di Mode Belajar atau saat Review Mode Latihan) -->
+          <div id="explanation-box" class="hidden mt-5 rounded-2xl p-4 sm:p-5 border-2">
+            <div class="flex items-center gap-2 mb-2">
+              <span id="exp-status-icon" class="text-lg"></span>
+              <h4 id="exp-status-title" class="font-extrabold text-sm sm:text-base"></h4>
+            </div>
+            <p id="exp-key-text" class="text-xs sm:text-sm font-bold mb-2"></p>
+            <div id="exp-detail-text" class="text-xs sm:text-sm leading-relaxed text-gray-800 space-y-1.5"></div>
+          </div>
+        </div>
+
+        <!-- Panel Navigasi Nomor Soal (4 Kolom) -->
+        <aside class="lg:col-span-4 bg-white rounded-2xl border border-amber-200 shadow-sm p-4 sm:p-5 lg:sticky lg:top-4">
+          <div class="flex items-center justify-between mb-3">
+            <h3 class="font-extrabold text-gray-900 text-sm sm:text-base">Navigasi Nomor Soal</h3>
+            <span class="text-xs font-semibold text-amber-700">1 – 25</span>
+          </div>
+
+          <div id="nav-grid" class="grid grid-cols-5 gap-2 mb-4"></div>
+
+          <!-- Legenda Warna -->
+          <div class="border-t border-amber-100 pt-3 space-y-1.5 text-xs text-gray-600">
+            <div class="flex items-center gap-2">
+              <span class="w-3.5 h-3.5 rounded bg-amber-500 inline-block"></span>
+              <span>Sedang dibuka</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-3.5 h-3.5 rounded bg-amber-100 border border-amber-400 inline-block"></span>
+              <span>Sudah dijawab</span>
+            </div>
+            <div id="legend-doubt" class="flex items-center gap-2">
+              <span class="w-3.5 h-3.5 rounded bg-yellow-300 border border-yellow-600 inline-block"></span>
+              <span>Ditandai ragu-ragu</span>
+            </div>
+            <div id="legend-eval" class="hidden space-y-1.5">
+              <div class="flex items-center gap-2">
+                <span class="w-3.5 h-3.5 rounded bg-emerald-500 inline-block"></span>
+                <span>Jawaban Benar</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="w-3.5 h-3.5 rounded bg-rose-500 inline-block"></span>
+                <span>Jawaban Salah</span>
+              </div>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-3.5 h-3.5 rounded bg-gray-100 border border-gray-300 inline-block"></span>
+              <span>Belum dijawab</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- LAYAR HASIL AKHIR (MODE LATIHAN / REKAP) -->
+    <section id="result-screen" class="hidden bg-white rounded-2xl border border-amber-200 shadow-sm p-5 sm:p-8 max-w-4xl mx-auto">
+      <div class="text-center border-b border-amber-100 pb-6">
+        <span class="inline-block px-3 py-1 rounded-full bg-amber-100 text-amber-900 font-bold text-xs uppercase tracking-wider mb-2">
+          Hasil Evaluasi ASAS Bab 3
+        </span>
+        <h3 class="text-2xl sm:text-3xl font-extrabold text-gray-900">Rekapitulasi Capaian Belajar</h3>
+        <p id="result-subtitle" class="text-sm text-gray-600 mt-1">
+          Berikut adalah hasil analisis pengerjaan soal literasi dan numerasi Pendidikan Pancasila Kelas IX Bab 3.
+        </p>
+
+        <!-- Kartu Skor Utama -->
+        <div class="mt-6 inline-flex flex-col items-center justify-center w-40 h-40 rounded-full bg-gradient-to-br from-amber-400 via-yellow-500 to-amber-600 text-white shadow-lg border-4 border-amber-100">
+          <span class="text-xs font-bold uppercase tracking-wider text-amber-100">Skor Akhir</span>
+          <span id="final-score" class="text-4xl sm:text-5xl font-extrabold mt-0.5">0</span>
+          <span id="final-predicate" class="text-xs font-semibold mt-1 px-2.5 py-0.5 rounded-full bg-amber-900/30">Predikat</span>
+        </div>
+      </div>
+
+      <!-- Rincian Statistik -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 my-6">
+        <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-3.5 text-center">
+          <div class="text-xs font-bold text-emerald-700 uppercase">Jawaban Benar</div>
+          <div id="stat-correct" class="text-2xl font-extrabold text-emerald-900 mt-1">0</div>
+        </div>
+        <div class="bg-rose-50 border border-rose-200 rounded-xl p-3.5 text-center">
+          <div class="text-xs font-bold text-rose-700 uppercase">Jawaban Salah</div>
+          <div id="stat-wrong" class="text-2xl font-extrabold text-rose-900 mt-1">0</div>
+        </div>
+        <div class="bg-amber-50 border border-amber-200 rounded-xl p-3.5 text-center">
+          <div class="text-xs font-bold text-amber-700 uppercase">PG Biasa (18)</div>
+          <div id="stat-pg" class="text-2xl font-extrabold text-amber-900 mt-1">0/18</div>
+        </div>
+        <div class="bg-sky-50 border border-sky-200 rounded-xl p-3.5 text-center">
+          <div class="text-xs font-bold text-sky-700 uppercase">PG Kompleks (7)</div>
+          <div id="stat-pgk" class="text-2xl font-extrabold text-sky-900 mt-1">0/7</div>
+        </div>
+      </div>
+
+      <!-- Analisis Capaian Submateri & HOTS -->
+      <div class="bg-amber-50/60 border border-amber-200 rounded-2xl p-4 sm:p-5 mb-6">
+        <h4 class="font-extrabold text-gray-900 text-sm sm:text-base mb-3">Analisis Penguasaan Subbab Materi</h4>
+        <div id="topic-analysis" class="space-y-3 text-xs sm:text-sm"></div>
+      </div>
+
+      <!-- Tombol Aksi Hasil -->
+      <div class="flex flex-wrap items-center justify-center gap-3">
+        <button onclick="enterReviewMode()" class="px-5 py-3 rounded-xl bg-amber-600 hover:bg-amber-700 text-white font-bold text-sm sm:text-base shadow-sm transition cursor-pointer">
+          Lihat Pembahasan Lengkap (1–25)
+        </button>
+        <button onclick="resetToHome()" class="px-5 py-3 rounded-xl border-2 border-amber-400 bg-white hover:bg-amber-50 text-amber-900 font-bold text-sm sm:text-base transition cursor-pointer">
+          Ulangi / Pilih Mode Lain
+        </button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- MODAL KONFIRMASI KUSTOM (PENGGANTI ALERT/CONFIRM) -->
+  <div id="custom-modal" class="hidden fixed inset-0 z-50 bg-black/50 backdrop-blur-xs flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl border border-amber-200 max-w-md w-full p-5 sm:p-6 shadow-xl">
+      <h4 id="modal-title" class="text-lg font-extrabold text-gray-900">Konfirmasi</h4>
+      <p id="modal-message" class="text-sm text-gray-600 mt-2 leading-relaxed"></p>
+      <div class="mt-5 flex items-center justify-end gap-2.5">
+        <button onclick="closeModal()" class="px-4 py-2 rounded-xl border border-gray-300 text-gray-700 font-semibold text-sm hover:bg-gray-50 cursor-pointer">
+          Batal
+        </button>
+        <button id="modal-confirm-btn" class="px-4 py-2 rounded-xl bg-amber-600 hover:bg-amber-700 text-white font-bold text-sm cursor-pointer">
+          Ya, Lanjutkan
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER WAJIB SESUAI PEDOMAN -->
+  <footer class="bg-amber-950 text-amber-100 border-t-4 border-amber-500 mt-8">
+    <div class="max-w-6xl mx-auto px-4 py-5 text-center text-xs sm:text-sm space-y-1">
+      <p class="font-medium text-amber-200">
+        Sumber: Buku Siswa Pendidikan Pancasila SMP/MTs Kelas IX (Kemendikbudristek, 2023)
+      </p>
+      <p class="font-bold text-amber-400 tracking-wide">
+        <a href="https://www.pakwaronline.com" target="_blank" rel="noopener noreferrer" class="hover:underline">www.pakwaronline.com</a>
+      </p>
+      <p class="text-amber-300/80 italic font-medium">
+        Shared &amp; Educated
+      </p>
+    </div>
+  </footer>
+
+  <!-- DATA & LOGIKA APLIKASI -->
+  <script>
+    /**
+     * BANK SOAL ASAS PENDIDIKAN PANCASILA KELAS IX - BAB 3
+     * "Kemerdekaan Berpendapat Warga Negara pada Era Keterbukaan Informasi"
+     * Sebaran:
+     * - Subbab A (5 soal: 4 PG + 1 PGK) -> Makna Kemerdekaan Berpendapat Warga Negara
+     * - Subbab B (5 soal: 3 PG + 2 PGK) -> Jaminan Kemerdekaan Berpendapat di Indonesia
+     * - Subbab C (5 soal: 4 PG + 1 PGK) -> Bentuk-Bentuk Penyampaian Pendapat
+     * - Subbab D (5 soal: 3 PG + 2 PGK) -> Keterbukaan Informasi Publik
+     * - Subbab E (5 soal: 4 PG + 1 PGK) -> Praktik Mengemukakan Pendapat
+     */
+    const baseQuestionsData = [
+      // ==================== SUBBAB A: MAKNA KEMERDEKAAN BERPENDAPAT WARGA NEGARA (5 SOAL: 4 PG + 1 PGK) ====================
+
+      // SOAL 1 (C4 - Sedang - PG)
+      {
+        id: 1,
+        subbab: "A. Makna Kemerdekaan Berpendapat Warga Negara",
+        type: "pg",
+        cognitive: "C4 (Analisis)",
+        difficulty: "Sedang",
+        stimulus: `
+          <div class="bg-amber-50/70 border border-amber-200 rounded-xl p-4">
+            <p class="text-xs sm:text-sm font-bold text-amber-900 mb-2">Cermati kutipan pesan tokoh Hakim Agung Indonesia serta uraian mengenai kebebasan berpendapat berikut!</p>
+            <blockquote class="italic text-gray-800 text-xs sm:text-sm leading-relaxed border-l-4 border-amber-500 pl-3 mb-2">
+              "Jangan hanya protes, tunjukkan juga bahwa kamu punya dedikasi." — <strong>Artidjo Al Kautsar</strong> (Hakim Agung Indonesia)
+            </blockquote>
+            <p class="text-xs sm:text-sm text-gray-700 leading-relaxed">
+              Menurut Undang-Undang Nomor 9 Tahun 1998, kemerdekaan menyampaikan pendapat adalah hak setiap warga negara untuk menyampaikan pikiran dengan lisan, tulisan, dan sebagainya secara bebas dan bertanggung jawab sesuai ketentuan peraturan perundang-undangan yang berlaku.
+            </p>
+          </div>
+        `,
+        question: "Berdasarkan kutipan tokoh dan ketentuan undang-undang tersebut, makna utama dari 'bebas dan bertanggung jawab' dalam menyampaikan pendapat adalah ....",
+        options: [
+          "warga bebas menyampaikan kritik disertai solusi konstruktif tanpa melanggar hukum serta hak orang lain",
+          "setiap orang berhak mengungkapkan segala isi hatinya di depan umum tanpa dibatasi etika maupun aturan",
+          "penyampaian protes kepada penyelenggara negara hanya boleh dilakukan oleh warga yang memiliki jabatan",
+          "kebebasan berpendapat di muka umum berlaku tanpa memerlukan pertanggungjawaban secara moral maupun hukum"
+        ],
+        answer: [0],
+        explanation: "Bebas dalam mengemukakan pendapat bukan berarti bebas sebebas-bebasnya tanpa aturan, melainkan bebas menyampaikan gagasan kritis dan dedikasi yang dapat dipertanggungjawabkan secara moral serta hukum."
+      },
+
+      // SOAL 2 (C4 - Sulit - PG)
+      {
+        id: 2,
+        subbab: "A. Makna Kemerdekaan Berpendapat Warga Negara",
+        type: "pg",
+        cognitive: "C4 (Analisis)",
+        difficulty: "Sulit",
+        stimulus: `
+          <div class="bg-sky-50/70 border border-sky-200 rounded-xl p-4">
+            <p class="text-xs sm:text-sm font-bold text-sky-900 mb-2">Cermati kisah perjuangan Raden Ajeng Kartini dalam menyuarakan kesetaraan hak berpendapat berikut!</p>
+            <p class="text-xs sm:text-sm text-gray-700 leading-relaxed">
+              Pada masa lalu, perempuan sering dianggap tidak perlu menempuh pendidikan tinggi. Melalui surat-surat yang dikirimkannya kepada sahabat-sahabatnya di Belanda, R.A. Kartini menyuarakan gagasan kritis tentang kesetaraan hak perempuan untuk belajar dan menentukan masa depannya sendiri. Kini, di ruang kelas maupun lembaga publik, perempuan dan laki-laki memiliki kedudukan setara untuk menyampaikan pendapat.
+            </p>
+          </div>
+        `,
+        question: "Pelajaran penting yang dapat dipetik dari perjuangan R.A. Kartini terkait kemerdekaan berpendapat warga negara adalah ....",
+        options: [
+          "hak menyampaikan gagasan dimiliki secara setara oleh setiap warga negara tanpa membedakan gender",
+          "penyampaian pendapat melalui tulisan surat pribadi jauh lebih efektif daripada diskusi terbuka di kelas",
+          "kesetaraan hak berpendapat hanya berlaku dalam bidang pendidikan dasar tanpa mencakup jabatan publik",
+          "perbedaan pandangan antara laki-laki dan perempuan dalam diskusi harus dihindari demi ketertiban umum"
+        ],
+        answer: [0],
+        explanation: "Kisah R.A. Kartini membuktikan bahwa kemerdekaan berpendapat merupakan hak asasi setiap warga negara secara setara, baik laki-laki maupun perempuan, dan tulisan gagasan yang santun mampu membawa perubahan besar."
+      },
+
+      // SOAL 3 (C4 - Sulit - PGK)
+      {
+        id: 3,
+        subbab: "A. Makna Kemerdekaan Berpendapat Warga Negara",
+        type: "pgk",
+        cognitive: "C4 (Analisis)",
+        difficulty: "Sulit",
+        instructionText: "PILIHAN GANDA KOMPLEKS — Pilihlah tiga pernyataan yang paling sesuai!",
+        stimulus: `
+          <div class="bg-white border border-amber-200 rounded-xl p-4 overflow-x-auto">
+            <p class="text-xs sm:text-sm font-bold text-amber-900 mb-2">Perhatikan ketentuan Pasal 6 Undang-Undang Nomor 9 Tahun 1998 tentang kewajiban warga negara dalam menyampaikan pendapat di muka umum berikut!</p>
+            <ul class="text-xs sm:text-sm text-gray-700 space-y-1 list-disc pl-5">
+              <li>Menghormati hak-hak dan kebebasan orang lain.</li>
+              <li>Menghormati aturan-aturan moral yang diakui umum.</li>
+              <li>Menaati hukum dan ketentuan peraturan perundang-undangan yang berlaku.</li>
+              <li>Menjaga dan menghormati keamanan dan ketertiban umum.</li>
+              <li>Menjaga keutuhan persatuan dan kesatuan bangsa.</li>
+            </ul>
+          </div>
+        `,
+        question: "Berdasarkan lima kewajiban dalam Pasal 6 UU No. 9 Tahun 1998 di atas, pilihlah tiga simpulan analisis yang paling tepat!",
+        options: [
+          "Kemerdekaan berpendapat warga negara harus dijalankan seimbang dengan kewajiban menjaga ketertiban umum",
+          "Narasi yang mengandung hasutan, adu domba, dan ujaran kebencian dilarang karena mengancam persatuan bangsa",
+          "Setiap warga yang menyampaikan aspirasi wajib menghormati aturan moral dan hak kebebasan orang lain",
+          "Kewajiban menaati aturan hukum hanya berlaku apabila penyampaian pendapat dilakukan secara lisan di jalan raya"
+        ],
+        answer: [0, 1, 2],
+        explanation: "Pernyataan 1, 2, dan 3 tepat sesuai Pasal 6 UU No. 9 Tahun 1998 yang menyeimbangkan hak berpendapat dengan kewajiban moral, hukum, ketertiban umum, dan persatuan bangsa."
+      },
+
+      // SOAL 4 (C3 - Sedang - PG)
+      {
+        id: 4,
+        subbab: "A. Makna Kemerdekaan Berpendapat Warga Negara",
+        type: "pg",
+        cognitive: "C3 (Aplikasi)",
+        difficulty: "Sedang",
+        stimulus: `
+          <div class="bg-amber-50/70 border border-amber-200 rounded-xl p-4">
+            <p class="text-xs sm:text-sm font-bold text-amber-900 mb-2">Cermati peran strategis kemerdekaan berpendapat dalam kehidupan negara demokrasi berikut!</p>
+            <p class="text-xs sm:text-sm text-gray-700 leading-relaxed">
+              Dalam negara demokrasi, kemerdekaan berpendapat warga negara berfungsi sebagai sarana kontrol atau pengawasan sosial terhadap jalannya pemerintahan, sekaligus menjadi jembatan masukan konstruktif untuk menegakkan keadilan, memajukan kesejahteraan umum, dan mencerdaskan kehidupan bangsa.
+            </p>
+          </div>
+        `,
+        question: "Contoh penerapan fungsi kontrol warga negara terhadap pelayanan publik yang paling tepat dan bertanggung jawab adalah ....",
+        options: [
+          "mengirimkan laporan kondisi jalan berlubang disertai foto bukti ke kanal pengaduan resmi pemerintah daerah",
+          "menyebarkan komentar bernada caci maki di akun media sosial pejabat tanpa menjelaskan permasalahan sebenarnya",
+          "mengajak warga memblokir jalan umum sehingga pengendara lain tidak dapat melintas menuju tempat kerja",
+          "membuat akun anonim untuk menyebarkan kabar belum terverifikasi mengenai anggaran pembangunan desa"
+        ],
+        answer: [0],
+        explanation: "Mengirimkan laporan faktual disertai bukti melalui saluran resmi adalah wujud partisipasi pengawasan warga negara yang konstruktif dan sesuai etika hukum."
+      },
+
+      // SOAL 5 (C5 - Sangat Sulit - PG)
+      {
+        id: 5,
+        subbab: "A. Makna Kemerdekaan Berpendapat Warga Negara",
+        type: "pg",
+        cognitive: "C5 (Evaluasi)",
+        difficulty: "Sangat Sulit",
+        stimulus: `
+          <div class="bg-rose-50/70 border border-rose-200 rounded-xl p-4">
+            <p class="text-xs sm:text-sm font-bold text-rose-900 mb-2">Simak kutipan pandangan Hakim Konstitusi Wahiduddin Adams mengenai batas kebebasan berekspresi berikut!</p>
+            <blockquote class="italic text-gray-800 text-xs sm:text-sm leading-relaxed border-l-4 border-rose-500 pl-3">
+              "Meskipun bersifat fundamental, hak atas kebebasan berpendapat dan berekspresi bukanlah hak yang bersifat mutlak. Penggunaan kebebasan setiap orang tidak dapat digunakan sedemikian rupa tanpa batas sehingga menyerang kehormatan atau nama baik seseorang, sebab hal tersebut bertentangan dengan UUD 1945 dan hukum internasional."
+            </blockquote>
+            <div class="text-[11px] text-gray-500 mt-1.5 text-right">Sumber kutipan: Mahkamah Konstitusi RI (mkri.id)</div>
+          </div>
+        `,
+        question: "Berdasarkan pandangan Hakim Konstitusi tersebut, evaluasi paling tepat apabila seseorang berdalih 'kebebasan berekspresi' saat mengunggah hinaan terhadap fisik temannya di media sosial adalah ....",
+        options: [
+          "dalih tersebut tidak dibenarkan karena kebebasan berpendapat dibatasi oleh penghormatan atas nama baik orang lain",
+          "dalih tersebut sah secara konstitusional selama unggahan hinaan hanya dibagikan kepada teman-teman dekat saja",
+          "pemerintah tidak berwenang membatasi ucapan apa pun di media sosial karena merupakan bagian dari hak asasi",
+          "penyerangan terhadap kehormatan seseorang baru dianggap melanggar hukum apabila terjadi di luar ruang digital"
+        ],
+        answer: [0],
+        explanation: "Hak kebebasan berpendapat bukan hak yang bersifat mutlak; pembatasan yang diatur undang-undang dibenarkan untuk melindungi kepentingan publik serta hak dan reputasi orang lain."
+      },
+
+      // ==================== SUBBAB B: JAMINAN KEMERDEKAAN BERPENDAPAT DI INDONESIA (5 SOAL: 3 PG + 2 PGK) ====================
+
+      // SOAL 6 (C4 - Sedang - PG)
+      {
+        id: 6,
+        subbab: "B. Jaminan Kemerdekaan Berpendapat di Indonesia",
+        type: "pg",
+        cognitive: "C4 (Analisis)",
+        difficulty: "Sedang",
+        stimulus: `
+          <div class="bg-white border border-amber-200 rounded-xl p-4 overflow-x-auto">
+            <p class="text-xs sm:text-sm font-bold text-amber-900 mb-2">Perhatikan tabel instrumen hukum nasional yang menjamin kemerdekaan berpendapat di Indonesia berikut!</p>
+            <table class="w-full text-xs sm:text-sm text-left border-collapse">
+              <thead>
+                <tr class="bg-amber-100 text-amber-950">
+                  <th class="p-2 border border-amber-200">Peraturan Perundang-undangan</th>
+                  <th class="p-2 border border-amber-200">Pokok Jaminan Hukum</th>
+                </tr>
+              </thead>
+              <tbody class="text-gray-700">
+                <tr>
+                  <td class="p-2 border border-amber-200 font-bold">Pasal 28E ayat (3) UUD NRI 1945</td>
+                  <td class="p-2 border border-amber-200">Setiap orang berhak atas kebebasan berserikat, berkumpul, dan mengeluarkan pendapat</td>
+                </tr>
+                <tr class="bg-amber-50/40">
+                  <td class="p-2 border border-amber-200 font-bold">Pasal 28F UUD NRI 1945</td>
+                  <td class="p-2 border border-amber-200">Hak berkomunikasi, mencari, memperoleh, mengolah, dan menyampaikan informasi</td>
+                </tr>
+                <tr>
+                  <td class="p-2 border border-amber-200 font-bold">UU No. 39 Tahun 1999 Pasal 23 (2)</td>
+                  <td class="p-2 border border-amber-200">Kebebasan menyebarluaskan pendapat melalui media cetak maupun elektronik secara beretika</td>
+                </tr>
+                <tr class="bg-amber-50/40">
+                  <td class="p-2 border border-amber-200 font-bold">UU No. 40 Tahun 1999 tentang Pers</td>
+                  <td class="p-2 border border-amber-200">Peran pers nasional memenuhi hak masyarakat mengetahui informasi yang tepat dan akurat</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        `,
+        question: "Berdasarkan tabel landasan hukum di atas, jaminan konstitusional bagi warga negara untuk mengakses dan menyebarkan informasi melalui saluran digital diatur secara khusus dalam ....",
+        options: [
+          "Pasal 28F UUD NRI Tahun 1945 mengenai hak berkomunikasi dan memperoleh informasi lewat segala saluran",
+          "Pasal 28E ayat (3) UUD NRI Tahun 1945 mengenai kebebasan mendirikan organisasi serikat pekerja",
+          "Undang-Undang Nomor 40 Tahun 1999 mengenai kewajiban perusahaan percetakan menerbitkan surat kabar",
+          "Ketetapan MPR Nomor XVII Tahun 1998 mengenai tata cara pemilihan anggota dewan perwakilan daerah"
+        ],
+        answer: [0],
+        explanation: "Pasal 28F UUD NRI Tahun 1945 secara eksplisit menjamin hak setiap orang untuk berkomunikasi serta mencari, memperoleh, memiliki, menyimpan, mengolah, dan menyampaikan informasi dengan menggunakan segala jenis saluran yang tersedia."
+      },
+
+      // SOAL 7 (C4 - Sulit - PG)
+      {
+        id: 7,
+        subbab: "B. Jaminan Kemerdekaan Berpendapat di Indonesia",
+        type: "pg",
+        cognitive: "C4 (Analisis)",
+        difficulty: "Sulit",
+        stimulus: `
+          <div class="bg-amber-50/70 border border-amber-200 rounded-xl p-4">
+            <p class="text-xs sm:text-sm font-bold text-amber-900 mb-2">Cermati ketentuan Pasal 7 Undang-Undang Nomor 9 Tahun 1998 berikut!</p>
+            <p class="text-xs sm:text-sm text-gray-700 leading-relaxed">
+              <em>"Dalam pelaksanaan penyampaian pendapat di muka umum oleh warga negara, aparatur pemerintah berkewajiban dan bertanggung jawab untuk: (a) melindungi hak asasi manusia; (b) menghargai asas legalitas; (c) menghargai prinsip praduga tak bersalah; dan (d) menyelenggarakan pengamanan."</em>
+            </p>
+          </div>
+        `,
+        question: "Makna kewajiban aparatur pemerintah untuk 'menghargai prinsip praduga tak bersalah' dan 'menyelenggarakan pengamanan' saat warga menyampaikan pendapat adalah ....",
+        options: [
+          "aparat wajib mengawal jalannya aksi damai agar tertib serta tidak menganggap peserta aksi sebagai pelaku kejahatan",
+          "aparat berwenang membubarkan setiap pertemuan warga sebelum peserta menyampaikan aspirasinya secara lisan",
+          "pemerintah menyerahkan sepenuhnya keamanan lalu lintas di sekitar lokasi demonstrasi kepada panitia aksi",
+          "warga negara yang menyampaikan kritik kebijakan publik otomatis dianggap melanggar ketertiban keamanan negara"
+        ],
+        answer: [0],
+        explanation: "Sesuai Pasal 7 UU No. 9 Tahun 1998 dan Pasal 28I ayat (4) UUD 1945, pemerintah wajib melindungi HAM, mengamankan jalannya penyampaian pendapat agar tertib, dan tidak memperlakukan peserta aksi damai sebagai pelaku tindak pidana."
+      },
+
+      // SOAL 8 (C4 - Sulit - PGK)
+      {
+        id: 8,
+        subbab: "B. Jaminan Kemerdekaan Berpendapat di Indonesia",
+        type: "pgk",
+        cognitive: "C4 (Analisis)",
+        difficulty: "Sulit",
+        instructionText: "PILIHAN GANDA KOMPLEKS — Pilihlah tiga pernyataan yang paling sesuai!",
+        stimulus: `
+          <div class="bg-sky-50/70 border border-sky-200 rounded-xl p-4">
+            <p class="text-xs sm:text-sm font-bold text-sky-900 mb-2">Perhatikan empat tujuan pengaturan kemerdekaan menyampaikan pendapat di muka umum menurut Pasal 4 UU Nomor 9 Tahun 1998 berikut!</p>
+            <ul class="text-xs sm:text-sm text-gray-700 space-y-1 list-disc pl-5">
+              <li>Mewujudkan kebebasan yang bertanggung jawab sebagai pelaksanaan HAM sesuai Pancasila dan UUD 1945.</li>
+              <li>Mewujudkan perlindungan hukum yang konsisten dan berkesinambungan dalam menjamin kemerdekaan berpendapat.</li>
+              <li>Mewujudkan iklim kondusif bagi berkembangnya partisipasi dan kreativitas warga negara dalam berdemokrasi.</li>
+              <li>Menempatkan tanggung jawab sosial dalam kehidupan berbangsa dan bernegara tanpa mengabaikan kepentingan perorangan/kelompok.</li>
+            </ul>
+          </div>
+        `,
+        question: "Berdasarkan keempat tujuan undang-undang tersebut, pilihlah tiga analisis yang paling tepat!",
+        options: [
+          "Pengaturan hukum bertujuan melindungi warga yang berpendapat secara sah sekaligus menumbuhkan kreativitas demokrasi",
+          "Hukum menyeimbangkan kepentingan perorangan atau kelompok dengan tanggung jawab sosial kepada masyarakat luas",
+          "Jaminan perlindungan hukum harus diterapkan secara konsisten dan berkesinambungan oleh seluruh aparat negara",
+          "Tujuan utama undang-undang adalah membatasi partisipasi aktif generasi muda dalam mengawasi kebijakan publik"
+        ],
+        answer: [0, 1, 2],
+        explanation: "Pernyataan 1, 2, dan 3 tepat sesuai empat tujuan pengaturan dalam Pasal 4 UU Nomor 9 Tahun 1998."
+      },
+
+      // SOAL 9 (C5 - Sangat Sulit - PG)
+      {
+        id: 9,
+        subbab: "B. Jaminan Kemerdekaan Berpendapat di Indonesia",
+        type: "pg",
+        cognitive: "C5 (Evaluasi)",
+        difficulty: "Sangat Sulit",
+        stimulus: `
+          <div class="bg-indigo-50/70 border border-indigo-200 rounded-xl p-4">
+            <p class="text-xs sm:text-sm font-bold text-indigo-900 mb-2">Cermati kutipan mengenai peran Pers Nasional dalam Undang-Undang Nomor 40 Tahun 1999 berikut!</p>
+            <p class="text-xs sm:text-sm text-gray-700 leading-relaxed">
+              Berdasarkan UU Nomor 40 Tahun 1999 tentang Pers, pers nasional berperan memenuhi hak masyarakat untuk mengetahui dan mengembangkan pendapat umum dengan menyampaikan informasi yang tepat, akurat, dan benar. Namun, di era media sosial saat ini, banyak akun tidak resmi menyebarkan berita sensasional tanpa proses verifikasi jurnalistik.
+            </p>
+          </div>
+        `,
+        question: "Evaluasi paling tepat untuk membedakan informasi karya pers profesional dengan unggahan akun anonim di media sosial adalah ....",
+        options: [
+          "karya pers terikat kode etik jurnalistik dan verifikasi fakta akurat, sedangkan akun anonim sering tanpa pertanggungjawaban",
+          "unggahan akun media sosial selalu lebih cepat dan dapat dipercaya dibandingkan laporan wartawan media massa resmi",
+          "pers nasional tidak memiliki kewajiban memeriksa kebenaran narasumber selama berita tersebut banyak dibagikan warga",
+          "masyarakat sebaiknya hanya membaca judul berita sensasional tanpa perlu memeriksa sumber penerbit beritanya"
+        ],
+        answer: [0],
+        explanation: "Pers nasional diatur oleh UU No. 40 Tahun 1999 dan Kode Etik Jurnalistik sehingga wajib menyajikan informasi yang tepat, akurat, terverifikasi, dan dapat dipertanggungjawabkan."
+      },
+
+      // SOAL 10 (C4 - Sedang - PGK)
+      {
+        id: 10,
+        subbab: "B. Jaminan Kemerdekaan Berpendapat di Indonesia",
+        type: "pgk",
+        cognitive: "C4 (Analisis)",
+        difficulty: "Sedang",
+        instructionText: "PILIHAN GANDA KOMPLEKS — Pilihlah dua pernyataan yang paling tepat!",
+        stimulus: `
+          <div class="bg-amber-50/70 border border-amber-200 rounded-xl p-4">
+            <p class="text-xs sm:text-sm font-bold text-amber-900 mb-2">Perhatikan ketentuan Pasal 28I ayat (4) dan ayat (5) UUD NRI Tahun 1945 berikut!</p>
+            <p class="text-xs sm:text-sm text-gray-700 leading-relaxed">
+              Pasal 28I ayat (4) menegaskan bahwa perlindungan, pemajuan, penegakan, dan pemenuhan hak asasi manusia adalah tanggung jawab negara, terutama pemerintah. Selanjutnya Pasal 28I ayat (5) menyatakan bahwa untuk menegakkan dan melindungi HAM sesuai prinsip negara hukum demokratis, pelaksanaannya dijamin, diatur, dan dituangkan dalam peraturan perundang-undangan.
+            </p>
+          </div>
+        `,
+        question: "Pilihlah dua kesimpulan yang tepat mengenai tanggung jawab negara terhadap kemerdekaan berpendapat berdasarkan kedua ayat konstitusi tersebut!",
+        options: [
+          "Pemerintah memiliki tanggung jawab utama melindungi serta menjamin ruang aman bagi warga dalam menyampaikan pendapat",
+          "Pengaturan kemerdekaan berpendapat ke dalam undang-undang bertujuan menegakkan prinsip negara hukum demokratis",
+          "Perlindungan hak berpendapat warga negara baru diberikan apabila warga mengajukan permohonan ke mahkamah internasional",
+          "Negara berhak meniadakan jaminan kebebasan berpendapat secara sepihak tanpa melalui aturan perundang-undangan"
+        ],
+        answer: [0, 1],
+        explanation: "Pernyataan 1 dan 2 tepat sesuai amanat Pasal 28I ayat (4) dan ayat (5) UUD NRI Tahun 1945."
+      },
+
+      // ==================== SUBBAB C: BENTUK-BENTUK PENYAMPAIAN PENDAPAT (5 SOAL: 4 PG + 1 PGK) ====================
+
+      // SOAL 11 (C4 - Sedang - PG)
+      {
+        id: 11,
+        subbab: "C. Bentuk-Bentuk Penyampaian Pendapat",
+        type: "pg",
+        cognitive: "C4 (Analisis)",
+        difficulty: "Sedang",
+        stimulus: `
+          <div class="bg-white border border-amber-200 rounded-xl p-4 overflow-x-auto">
+            <p class="text-xs sm:text-sm font-bold text-amber-900 mb-2">Perhatikan tabel bentuk penyampaian pendapat di muka umum menurut UU Nomor 9 Tahun 1998 berikut!</p>
+            <table class="w-full text-xs sm:text-sm text-left border-collapse">
+              <thead>
+                <tr class="bg-amber-100 text-amber-950">
+                  <th class="p-2 border border-amber-200">Bentuk Penyampaian</th>
+                  <th class="p-2 border border-amber-200">Karakteristik Pelaksanaan</th>
+                </tr>
+              </thead>
+              <tbody class="text-gray-700">
+                <tr>
+                  <td class="p-2 border border-amber-200 font-semibold">Unjuk Rasa / Demonstrasi</td>
+                  <td class="p-2 border border-amber-200">Kegiatan oleh seorang atau lebih mengeluarkan pikiran secara demonstratif dengan aman dan tertib</td>
+                </tr>
+                <tr class="bg-amber-50/40">
+                  <td class="p-2 border border-amber-200 font-semibold">Pawai</td>
+                  <td class="p-2 border border-amber-200">Cara menyampaikan pendapat dengan arak-arakan di jalan umum memperingati momen tertentu</td>
+                </tr>
+                <tr>
+                  <td class="p-2 border border-amber-200 font-semibold">Rapat Umum</td>
+                  <td class="p-2 border border-amber-200">Pertemuan terbuka yang dilakukan untuk menyampaikan pendapat dengan tema tertentu</td>
+                </tr>
+                <tr class="bg-amber-50/40">
+                  <td class="p-2 border border-amber-200 font-semibold">Mimbar Bebas</td>
+                  <td class="p-2 border border-amber-200">Kegiatan penyampaian pendapat di muka umum secara bebas dan terbuka tanpa tema tertentu</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        `,
+        question: "Perbedaan mendasar antara bentuk penyampaian pendapat 'rapat umum' dengan 'mimbar bebas' berdasarkan tabel di atas terletak pada ....",
+        options: [
+          "rapat umum diselenggarakan dengan tema tertentu yang spesifik, sedangkan mimbar bebas berlangsung tanpa tema tertentu",
+          "rapat umum hanya boleh diikuti oleh pejabat pemerintah, sedangkan mimbar bebas khusus bagi pelajar sekolah menengah",
+          "rapat umum dilaksanakan dengan arak-arakan di jalan raya, sedangkan mimbar bebas dilakukan di dalam gedung tertutup",
+          "rapat umum wajib mendapat izin dari mahkamah agung, sedangkan mimbar bebas dilarang oleh undang-undang nasional"
+        ],
+        answer: [0],
+        explanation: "Sesuai UU No. 9 Tahun 1998, rapat umum adalah pertemuan terbuka dengan tema tertentu, sedangkan mimbar bebas adalah penyampaian pendapat di muka umum secara bebas dan terbuka tanpa tema tertentu."
+      },
+
+      // SOAL 12 (C3 - Sedang - PG)
+      {
+        id: 12,
+        subbab: "C. Bentuk-Bentuk Penyampaian Pendapat",
+        type: "pg",
+        cognitive: "C3 (Aplikasi)",
+        difficulty: "Sedang",
+        stimulus: `
+          <div class="bg-emerald-50/70 border border-emerald-200 rounded-xl p-4">
+            <p class="text-xs sm:text-sm font-bold text-emerald-900 mb-2">Perhatikan ilustrasi tradisi budaya dan bentuk penyampaian pendapat di ruang publik berikut!</p>
+            <div class="flex flex-col sm:flex-row items-center gap-4">
+              <div class="shrink-0 text-center">
+                <svg class="w-36 h-28 rounded-xl border border-emerald-300 shadow-xs" viewBox="0 0 180 140" fill="none">
+                  <rect width="180" height="140" fill="#ecfdf5"/>
+                  <!-- Spanduk & Arak-arakan Budaya -->
+                  <rect x="22" y="20" width="136" height="24" rx="5" fill="#d97706"/>
+                  <text x="90" y="35" font-size="7.5" font-weight="bold" fill="#ffffff" text-anchor="middle">PAWAI BUDAYA TOLERANSI</text>
+                  <!-- Peserta Pawai -->
+                  <circle cx="48" cy="70" r="9" fill="#dc2626"/>
+                  <path d="M36 108 C36 86 60 86 60 108 Z" fill="#ef4444"/>
+                  <circle cx="90" cy="68" r="9" fill="#059669"/>
+                  <path d="M78 108 C78 84 102 84 102 108 Z" fill="#10b981"/>
+                  <circle cx="132" cy="70" r="9" fill="#2563eb"/>
+                  <path d="M120 108 C120 86 144 86 144 108 Z" fill="#3b82f6"/>
+                  <text x="90" y="128" font-size="7" font-weight="bold" fill="#065f46" text-anchor="middle">SINGKAWANG KOTA TOLERAN</text>
+                </svg>
+                <span class="block text-[10px] text-gray-500 mt-1">Ilustrasi Pawai Cap Go Meh (Adaptasi Antara Foto, 2023)</span>
+              </div>
+              <p class="text-xs sm:text-sm text-gray-700 leading-relaxed">
+                Dalam rangka memperingati perayaan budaya tahunan seperti Pawai Cap Go Meh di Kota Singkawang atau karnaval kemerdekaan daerah, warga mengadakan arak-arakan seni budaya yang tertib di jalan umum sebagai sarana ekspresi kebersamaan dan toleransi antarwarga.
+              </p>
+            </div>
+          </div>
+        `,
+        question: "Bentuk penyampaian ekspresi dan pendapat warga melalui arak-arakan tertib di jalan umum tersebut dikategorikan sebagai ....",
+        options: [
+          "pawai yang mempererat kebersamaan serta menunjukkan kerukunan masyarakat majemuk",
+          "unjuk rasa untuk memaksakan pembatalan kebijakan pemerintah daerah setempat",
+          "mimbar bebas tertutup yang hanya membahas persoalan internal organisasi kepemudaan",
+          "pemaparan opini tertulis melalui kolom surat pembaca di surat kabar harian nasional"
+        ],
+        answer: [0],
+        explanation: "Pawai adalah penyampaian pendapat atau ekspresi aspirasi/budaya melalui arak-arakan di jalan umum pada momen tertentu seperti peringatan hari besar atau perayaan budaya daerah."
+      },
+
+      // SOAL 13 (C4 - Sulit - PGK)
+      {
+        id: 13,
+        subbab: "C. Bentuk-Bentuk Penyampaian Pendapat",
+        type: "pgk",
+        cognitive: "C4 (Analisis)",
+        difficulty: "Sulit",
+        instructionText: "PILIHAN GANDA KOMPLEKS — Pilihlah tiga lokasi atau waktu yang dilarang!",
+        stimulus: `
+          <div class="bg-rose-50/70 border border-rose-200 rounded-xl p-4">
+            <p class="text-xs sm:text-sm font-bold text-rose-900 mb-2">Perhatikan ilustrasi pembatasan lokasi dan waktu penyampaian pendapat di muka umum menurut UU Nomor 9 Tahun 1998 berikut!</p>
+            <div class="flex flex-col sm:flex-row items-center gap-4">
+              <div class="shrink-0 text-center">
+                <svg class="w-36 h-28 rounded-xl border border-rose-300 shadow-xs" viewBox="0 0 180 140" fill="none">
+                  <rect width="180" height="140" fill="#fff1f2"/>
+                  <!-- Gedung Istana / Objek Vital -->
+                  <polygon points="30,46 90,22 150,46" fill="#991b1b"/>
+                  <rect x="38" y="46" width="104" height="44" fill="#ffffff" stroke="#dc2626" stroke-width="1.5"/>
+                  <circle cx="90" cy="68" r="14" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+                  <line x1="80" y1="58" x2="100" y2="78" stroke="#dc2626" stroke-width="2.5"/>
+                  <text x="90" y="106" font-size="7" font-weight="bold" fill="#881337" text-anchor="middle">AREA &amp; WAKTU TERLARANG</text>
+                  <text x="90" y="118" font-size="6.5" fill="#9f1239" text-anchor="middle">UU NO. 9 TAHUN 1998</text>
+                </svg>
+                <span class="block text-[10px] text-gray-500 mt-1">Ilustrasi Objek Vital (Adaptasi Gustinerz.com, 2022)</span>
+              </div>
+              <p class="text-xs sm:text-sm text-gray-700 leading-relaxed">
+                Demi menjamin keamanan nasional, ketertiban umum, dan kelancaran pelayanan masyarakat luas, Undang-Undang Nomor 9 Tahun 1998 menetapkan larangan penyampaian pendapat di muka umum pada tempat-tempat tertentu serta waktu tertentu.
+              </p>
+            </div>
+          </div>
+        `,
+        question: "Berdasarkan ketentuan UU Nomor 9 Tahun 1998, pilihlah tiga lokasi atau waktu yang DILARANG digunakan untuk kegiatan demonstrasi/unjuk rasa!",
+        options: [
+          "Lingkungan istana kepresidenan, tempat ibadah, rumah sakit, pelabuhan, stasiun kereta api, dan objek vital",
+          "Pada hari besar nasional yang diperingati secara resmi oleh seluruh bangsa Indonesia",
+          "Pada waktu malam hari karena berisiko tinggi mengganggu ketertiban dan keamanan umum",
+          "Di lapangan terbuka atau alun-alun kota pada siang hari kerja setelah menyampaikan pemberitahuan tertulis"
+        ],
+        answer: [0, 1, 2],
+        explanation: "Pernyataan 1, 2, dan 3 adalah lokasi dan waktu yang dilarang dalam UU No. 9 Tahun 1998 (istana kepresidenan, tempat ibadah, RS, bandara/pelabuhan/stasiun/terminal, objek vital, hari besar nasional, dan malam hari)."
+      },
+
+      // SOAL 14 (C4 - Sulit - PG)
+      {
+        id: 14,
+        subbab: "C. Bentuk-Bentuk Penyampaian Pendapat",
+        type: "pg",
+        cognitive: "C4 (Analisis)",
+        difficulty: "Sulit",
+        stimulus: `
+          <div class="bg-amber-50/70 border border-amber-200 rounded-xl p-4">
+            <p class="text-xs sm:text-sm font-bold text-amber-900 mb-2">Cermati perbandingan penyampaian pendapat secara lisan dan tulisan di era digital berikut!</p>
+            <p class="text-xs sm:text-sm text-gray-700 leading-relaxed">
+              Selain melalui pidato, diskusi, atau artikel opini di surat kabar, generasi muda saat ini kerap menyalurkan gagasan lewat unggahan status tertulis maupun video ulasan (<em>vlog</em>) di media sosial. Meskipun sangat mudah diakses publik, pendapat di ruang digital memiliki rekam jejak permanen yang dapat dibaca jutaan orang.
+            </p>
+          </div>
+        `,
+        question: "Implikasi paling penting dari sifat 'rekam jejak digital yang permanen' terhadap cara pelajar menyampaikan pendapat di media sosial adalah ....",
+        options: [
+          "pelajar wajib menyaring kebenaran fakta serta menjaga kesantunan bahasa sebelum menekan tombol unggah",
+          "pelajar bebas menulis komentar emosional asalkan segera menghapus unggahan tersebut beberapa menit kemudian",
+          "penyampaian pendapat melalui video di media sosial tidak terikat oleh aturan hukum pencemaran nama baik",
+          "pendapat tertulis di surat kabar cetak memiliki tanggung jawab moral lebih rendah dibanding status media sosial"
+        ],
+        answer: [0],
+        explanation: "Karena jejak digital dapat disimpan dan disebarkan ulang dengan cepat, setiap pendapat lisan (video) maupun tulisan (status/komentar) di media sosial wajib dipikirkan matang, akurat, dan santun."
+      },
+
+      // SOAL 15 (C5 - Sangat Sulit - PG)
+      {
+        id: 15,
+        subbab: "C. Bentuk-Bentuk Penyampaian Pendapat",
+        type: "pg",
+        cognitive: "C5 (Evaluasi)",
+        difficulty: "Sangat Sulit",
+        stimulus: `
+          <div class="bg-sky-50/70 border border-sky-200 rounded-xl p-4">
+            <p class="text-xs sm:text-sm font-bold text-sky-900 mb-2">Cermati cuplikan aksi damai pascapemilu bertema persatuan berikut!</p>
+            <p class="text-xs sm:text-sm text-gray-700 leading-relaxed">
+              Usai pelaksanaan pemilihan umum, sekelompok elemen masyarakat menggelar aksi damai bertema <em>"Damai Itu Indah, NKRI Bersama, Jadi Teladan Persatuan"</em>. Mereka menyerukan agar seluruh warga kembali bersatu dan pihak yang keberatan terhadap hasil pemilu menempuh jalur konstitusional melalui gugatan ke Mahkamah Konstitusi.
+            </p>
+            <div class="text-[11px] text-gray-500 mt-1.5 text-right">Sumber adaptasi: CNN Indonesia (2019)</div>
+          </div>
+        `,
+        question: "Evaluasi paling tepat mengapa aksi damai tersebut menjadi teladan demokrasi konstitusional di Indonesia adalah ....",
+        options: [
+          "menggunakan hak unjuk rasa secara damai sekaligus mendorong penyelesaian sengketa melalui lembaga hukum sah",
+          "memaksakan kehendak peserta aksi di jalan raya agar hasil pemilihan umum dibatalkan tanpa proses peradilan",
+          "melarang pihak yang kalah dalam pemilihan umum untuk mengajukan keberatan hukum kepada lembaga peradilan",
+          "menggantikan wewenang Mahkamah Konstitusi dalam memutus sengketa hasil pemilu melalui kerumunan massa"
+        ],
+        answer: [0],
+        explanation: "Aksi tersebut memadukan penyampaian pendapat secara damai dan tertib (UU No. 9 Tahun 1998) dengan penghormatan terhadap jalur konstitusional melalui Mahkamah Konstitusi."
+      },
+
+      // ==================== SUBBAB D: KETERBUKAAN INFORMASI PUBLIK (5 SOAL: 3 PG + 2 PGK) ====================
+
+      // SOAL 16 (C4 - Sulit - PG - Infografis Sebaran Hoaks)
+      {
+        id: 16,
+        subbab: "D. Keterbukaan Informasi Publik",
+        type: "pg",
+        cognitive: "C4 (Analisis)",
+        difficulty: "Sulit",
+        stimulus: `
+          <div class="bg-white border border-amber-200 rounded-xl p-4">
+            <p class="text-xs sm:text-sm font-bold text-amber-900 mb-2">Amati infografis format dan saluran penyebaran berita bohong (hoaks) yang sering diterima masyarakat berikut!</p>
+            <svg class="w-full max-w-lg h-48 mx-auto" viewBox="0 0 430 190" fill="none">
+              <rect width="430" height="190" rx="10" fill="#fffbeb"/>
+              <!-- Kiri: Bentuk Hoaks -->
+              <rect x="14" y="16" width="185" height="145" rx="8" fill="#ffffff" stroke="#f59e0b" stroke-width="1.5"/>
+              <text x="106" y="34" font-size="8.5" font-weight="bold" fill="#78350f" text-anchor="middle">Bentuk Hoaks Diterima</text>
+              <text x="24" y="58" font-size="8" font-weight="bold" fill="#374151">Teks</text>
+              <rect x="65" y="48" width="94" height="13" rx="3" fill="#dc2626"/>
+              <text x="164" y="58" font-size="8" font-weight="bold" fill="#991b1b">62,3%</text>
+              <text x="24" y="86" font-size="8" font-weight="bold" fill="#374151">Gambar</text>
+              <rect x="65" y="76" width="56" height="13" rx="3" fill="#d97706"/>
+              <text x="126" y="86" font-size="8" font-weight="bold" fill="#92400e">37,5%</text>
+              <text x="24" y="114" font-size="8" font-weight="bold" fill="#374151">Video</text>
+              <rect x="65" y="104" width="6" height="13" rx="2" fill="#f59e0b"/>
+              <text x="76" y="114" font-size="8" font-weight="bold" fill="#92400e">0,4%</text>
+              <text x="106" y="144" font-size="7" fill="#78350f" text-anchor="middle">Dominasi narasi tulisan &amp; foto editan</text>
+              <!-- Kanan: Saluran Teratas -->
+              <rect x="212" y="16" width="204" height="145" rx="8" fill="#ffffff" stroke="#f59e0b" stroke-width="1.5"/>
+              <text x="314" y="34" font-size="8.5" font-weight="bold" fill="#78350f" text-anchor="middle">Urutan Saluran Penyebaran</text>
+              <rect x="226" y="46" width="176" height="22" rx="4" fill="#fef3c7"/>
+              <text x="234" y="60" font-size="8" font-weight="bold" fill="#92400e">1. Media Sosial (FB, IG, X)</text>
+              <rect x="226" y="74" width="176" height="22" rx="4" fill="#fef3c7"/>
+              <text x="234" y="88" font-size="8" font-weight="bold" fill="#92400e">2. Aplikasi Percakapan (Chat)</text>
+              <rect x="226" y="102" width="176" height="22" rx="4" fill="#f8fafc"/>
+              <text x="234" y="116" font-size="8" fill="#475569">3. Situs Web &amp; Televisi</text>
+              <rect x="226" y="130" width="176" height="22" rx="4" fill="#f8fafc"/>
+              <text x="234" y="144" font-size="8" fill="#475569">4. Media Cetak, Email, Radio</text>
+              <text x="215" y="178" font-size="7.5" fill="#78350f" text-anchor="middle">Sumber: Infografis Diskominfo Provinsi Jawa Barat (2023)</text>
+            </svg>
+          </div>
+        `,
+        question: "Berdasarkan infografis di atas, analisis paling tepat mengenai pola penyebaran informasi palsu di era keterbukaan informasi adalah ....",
+        options: [
+          "hoaks berbentuk pesan teks (62,30%) yang disebarkan lewat media sosial dan aplikasi chat paling rawan menipu warga",
+          "siaran radio dan media cetak merupakan saluran utama yang paling banyak dimanfaatkan untuk menyebarkan berita hoaks",
+          "konten video merupakan bentuk informasi bohong yang paling sering diterima masyarakat dibanding pesan teks dan gambar",
+          "pengguna aplikasi percakapan pribadi terbebas dari risiko menerima pesan berantai yang mengandung informasi palsu"
+        ],
+        answer: [0],
+        explanation: "Sesuai data Diskominfo Jabar, bentuk hoaks terbanyak adalah teks (62,30%) disusul gambar (37,50%), dan saluran penyebaran tertingginya adalah media sosial serta aplikasi chat."
+      },
+
+      // SOAL 17 (C4 - Sulit - PG - Numerasi Tabel Kenaikan Harga BBM)
+      {
+        id: 17,
+        subbab: "D. Keterbukaan Informasi Publik",
+        type: "pg",
+        cognitive: "C4 (Analisis)",
+        difficulty: "Sulit",
+        stimulus: `
+          <div class="bg-white border border-amber-200 rounded-xl p-4 overflow-x-auto">
+            <p class="text-xs sm:text-sm font-bold text-amber-900 mb-2">Perhatikan tabel informasi publik mengenai penyesuaian harga Bahan Bakar Minyak (BBM) berikut!</p>
+            <table class="w-full text-xs sm:text-sm text-left border-collapse">
+              <thead>
+                <tr class="bg-amber-100 text-amber-950">
+                  <th class="p-2 border border-amber-200">Jenis BBM</th>
+                  <th class="p-2 border border-amber-200">Harga Lama</th>
+                  <th class="p-2 border border-amber-200">Harga Baru</th>
+                  <th class="p-2 border border-amber-200">Selisih Kenaikan</th>
+                </tr>
+              </thead>
+              <tbody class="text-gray-700">
+                <tr>
+                  <td class="p-2 border border-amber-200 font-semibold">Pertalite</td>
+                  <td class="p-2 border border-amber-200">Rp7.650 / liter</td>
+                  <td class="p-2 border border-amber-200">Rp10.000 / liter</td>
+                  <td class="p-2 border border-amber-200 font-bold text-rose-700">+Rp2.350 / liter</td>
+                </tr>
+                <tr class="bg-amber-50/40">
+                  <td class="p-2 border border-amber-200 font-semibold">Solar Subsidi</td>
+                  <td class="p-2 border border-amber-200">Rp5.150 / liter</td>
+                  <td class="p-2 border border-amber-200">Rp6.800 / liter</td>
+                  <td class="p-2 border border-amber-200 font-bold text-amber-800">+Rp1.650 / liter</td>
+                </tr>
+                <tr>
+                  <td class="p-2 border border-amber-200 font-semibold">Pertamax</td>
+                  <td class="p-2 border border-amber-200">Rp12.500 / liter</td>
+                  <td class="p-2 border border-amber-200">Rp14.500 / liter</td>
+                  <td class="p-2 border-amber-200 font-bold text-amber-800">+Rp2.000 / liter</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="text-[11px] text-gray-500 mt-1.5 text-right">Sumber data: Siaran Berita Nasional / Kementerian ESDM (2022)</div>
+          </div>
+        `,
+        question: "Setelah melihat tabel di atas, Riko berpendapat bahwa jenis BBM Pertamax mengalami kenaikan harga paling tinggi dibandingkan Pertalite dan Solar Subsidi. Evaluasi paling tepat terhadap pendapat Riko adalah ....",
+        options: [
+          "kurang tepat karena kenaikan tertinggi dialami oleh Pertalite sebesar Rp2.350 per liter, bukan Pertamax",
+          "sudah tepat karena harga jual akhir Pertamax mencapai Rp14.500 per liter sebagai angka paling besar",
+          "kurang tepat karena Solar Subsidi mengalami kenaikan lebih besar daripada selisih kenaikan Pertalite",
+          "sudah tepat karena selisih harga lama dan harga baru Pertamax lebih besar dari Rp2.350 per liter"
+        ],
+        answer: [0],
+        explanation: "Kenaikan Pertalite adalah Rp10.000 - Rp7.650 = Rp2.350/liter, lebih tinggi daripada kenaikan Pertamax (Rp2.000/liter) maupun Solar Subsidi (Rp1.650/liter). Literasi data melatih siswa cermat menghitung selisih perubahan."
+      },
+
+      // SOAL 18 (C4 - Sedang - PGK)
+      {
+        id: 18,
+        subbab: "D. Keterbukaan Informasi Publik",
+        type: "pgk",
+        cognitive: "C4 (Analisis)",
+        difficulty: "Sedang",
+        instructionText: "PILIHAN GANDA KOMPLEKS — Pilihlah tiga pernyataan yang paling tepat!",
+        stimulus: `
+          <div class="bg-amber-50/70 border border-amber-200 rounded-xl p-4">
+            <p class="text-xs sm:text-sm font-bold text-amber-900 mb-2">Cermati pokok pengaturan Undang-Undang Nomor 14 Tahun 2008 tentang Keterbukaan Informasi Publik berikut!</p>
+            <p class="text-xs sm:text-sm text-gray-700 leading-relaxed">
+              UU Keterbukaan Informasi Publik menjamin hak warga negara untuk mengetahui rencana dan alasan pengambilan kebijakan publik guna mendorong partisipasi masyarakat serta mewujudkan pemerintahan yang transparan, efektif, dan akuntabel. Meskipun demikian, terdapat informasi publik yang dikecualikan bersifat rahasia dan terbatas (seperti rahasia pertahanan negara dan data pribadi), serta pengguna informasi wajib mencantumkan sumber informasi publik saat memublikasikannya.
+            </p>
+          </div>
+        `,
+        question: "Berdasarkan paparan di atas, pilihlah tiga kesimpulan yang paling tepat mengenai hak dan kewajiban dalam keterbukaan informasi publik!",
+        options: [
+          "Keterbukaan informasi publik mendorong penyelenggaraan negara yang transparan dan dapat dipertanggungjawabkan",
+          "Warga negara yang mengutip data laporan keuangan negara wajib mencantumkan sumber resminya secara jujur",
+          "Informasi yang berkaitan dengan rahasia pertahanan keamanan negara dikecualikan dari akses bebas publik",
+          "Seluruh dokumen rahasia negara wajib dibuka bebas di media sosial agar masyarakat dapat mengawasinya"
+        ],
+        answer: [0, 1, 2],
+        explanation: "Pernyataan 1, 2, dan 3 tepat sesuai UU No. 14 Tahun 2008 tentang Keterbukaan Informasi Publik (mendorong transparansi, kewajiban mencantumkan sumber informasi publik, serta pengecualian informasi rahasia negara)."
+      },
+
+      // SOAL 19 (C3 - Sedang - PG)
+      {
+        id: 19,
+        subbab: "D. Keterbukaan Informasi Publik",
+        type: "pg",
+        cognitive: "C3 (Aplikasi)",
+        difficulty: "Sedang",
+        stimulus: `
+          <div class="bg-sky-50/70 border border-sky-200 rounded-xl p-4">
+            <p class="text-xs sm:text-sm font-bold text-sky-900 mb-2">Perhatikan bagan tata cara penyampaian aduan atau permintaan informasi melalui layanan nasional <strong>LAPOR!</strong> berikut!</p>
+            <div class="grid grid-cols-1 sm:grid-cols-4 gap-2 text-center text-xs">
+              <div class="p-2.5 rounded-xl bg-white border border-sky-300">
+                <div class="font-extrabold text-sky-900">1. Lengkapi Data</div>
+                <p class="text-gray-600 mt-1">Akses situs lapor.go.id / SMS 1708 dan isi identitas pelapor.</p>
+              </div>
+              <div class="p-2.5 rounded-xl bg-white border border-sky-300">
+                <div class="font-extrabold text-sky-900">2. Tulis Persoalan</div>
+                <p class="text-gray-600 mt-1">Uraikan kronologi masalah pelayanan publik secara jelas dan santun.</p>
+              </div>
+              <div class="p-2.5 rounded-xl bg-white border border-sky-300">
+                <div class="font-extrabold text-sky-900">3. Lampirkan Bukti</div>
+                <p class="text-gray-600 mt-1">Sertakan foto atau dokumen pendukung yang valid jika tersedia.</p>
+              </div>
+              <div class="p-2.5 rounded-xl bg-amber-600 text-white border border-amber-800">
+                <div class="font-extrabold">4. Pilih Kategori</div>
+                <p class="text-amber-100 mt-1">Tentukan instansi tujuan &amp; kategori aduan/aspirasi/informasi.</p>
+              </div>
+            </div>
+          </div>
+        `,
+        question: "Apabila warga di lingkungan tempat tinggalmu mengeluhkan lampu penerangan jalan utama yang padam selama berminggu-minggu sehingga rawan kecelakaan, langkah paling tepat memanfaatkan kanal <strong>LAPOR!</strong> adalah ....",
+        options: [
+          "mengirimkan laporan tertulis disertai foto titik lokasi jalan gelap ke instansi terkait melalui lapor.go.id",
+          "mengirimkan puluhan pesan berantai bernada kemarahan tanpa mencantumkan alamat lokasi jalan yang rusak",
+          "meminta pengurus karang taruna membongkar tiang listrik umum tanpa berkoordinasi dengan dinas teknis",
+          "menunggu hingga terjadi kecelakaan lalu lintas terlebih dahulu sebelum menyampaikan keluhan kepada pemerintah"
+        ],
+        answer: [0],
+        explanation: "Aplikasi LAPOR! (Layanan Aspirasi dan Pengaduan Online Rakyat) dikelola Kementerian PANRB sebagai saluran resmi warga menyampaikan aduan pelayanan publik lengkap dengan bukti foto dan lokasi instansi tujuan."
+      },
+
+      // SOAL 20 (C5 - Sulit - PGK)
+      {
+        id: 20,
+        subbab: "D. Keterbukaan Informasi Publik",
+        type: "pgk",
+        cognitive: "C5 (Evaluasi)",
+        difficulty: "Sulit",
+        instructionText: "PILIHAN GANDA KOMPLEKS — Pilihlah dua dampak negatif yang paling tepat!",
+        stimulus: `
+          <div class="bg-white border border-amber-200 rounded-xl p-4 overflow-x-auto">
+            <p class="text-xs sm:text-sm font-bold text-amber-900 mb-2">Perhatikan cuplikan tabel informasi publik Realisasi Pengeluaran Negara (dalam Miliar Rupiah) berikut!</p>
+            <table class="w-full text-xs sm:text-sm text-left border-collapse">
+              <thead>
+                <tr class="bg-amber-100 text-amber-950">
+                  <th class="p-2 border border-amber-200">Pos Pengeluaran Negara</th>
+                  <th class="p-2 border border-amber-200">2020</th>
+                  <th class="p-2 border border-amber-200">2021</th>
+                  <th class="p-2 border border-amber-200">2022</th>
+                </tr>
+              </thead>
+              <tbody class="text-gray-700">
+                <tr>
+                  <td class="p-2 border border-amber-200 font-semibold">I. Pengeluaran Pemerintah Pusat</td>
+                  <td class="p-2 border border-amber-200">1.832.950,92</td>
+                  <td class="p-2 border border-amber-200">1.926.964,90</td>
+                  <td class="p-2 border border-amber-200">1.944.542,25</td>
+                </tr>
+                <tr class="bg-amber-50/40">
+                  <td class="p-2 border border-amber-200 font-semibold">II. Pengeluaran untuk Daerah</td>
+                  <td class="p-2 border border-amber-200">762.530,18</td>
+                  <td class="p-2 border border-amber-200">770.272,10</td>
+                  <td class="p-2 border border-amber-200">769.613,47</td>
+                </tr>
+                <tr>
+                  <td class="p-2 border border-amber-200 font-bold text-amber-950">Total Pengeluaran Negara</td>
+                  <td class="p-2 border border-amber-200 font-bold">2.595.481,10</td>
+                  <td class="p-2 border border-amber-200 font-bold">2.697.237,00</td>
+                  <td class="p-2 border border-amber-200 font-bold">2.714.155,72</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="text-[11px] text-gray-500 mt-1.5 text-right">Sumber data: Kementerian Keuangan RI dalam bps.go.id (2023)</div>
+          </div>
+        `,
+        question: "Pemerintah memublikasikan rincian realisasi pengeluaran negara seperti tabel di atas sebagai wujud keterbukaan informasi publik. Apa dua dampak serius yang akan terjadi apabila penyelenggaraan negara bersifat tertutup dan tidak transparan?",
+        options: [
+          "Meningkatnya risiko penyalahgunaan anggaran serta praktik korupsi akibat lemahnya pengawasan masyarakat",
+          "Menurunnya tingkat kepercayaan publik terhadap penyelenggara negara karena kebijakan tidak dapat dipertanggungjawabkan",
+          "Mempercepat proses pembangunan infrastruktur karena pemerintah tidak perlu memberikan laporan kepada rakyat",
+          "Mengurangi beban kerja lembaga peradilan karena masyarakat tidak mengetahui adanya penyimpangan kebijakan"
+        ],
+        answer: [0, 1],
+        explanation: "Penyelenggaraan negara yang tertutup menghilangkan fungsi kontrol publik sehingga memicu risiko penyalahgunaan wewenang/anggaran serta meruntuhkan kepercayaan rakyat terhadap pemerintah."
+      },
+
+      // ==================== SUBBAB E: PRAKTIK MENGEMUKAKAN PENDAPAT (5 SOAL: 4 PG + 1 PGK) ====================
+
+      // SOAL 21 (C3 - Sedang - PG)
+      {
+        id: 21,
+        subbab: "E. Praktik Mengemukakan Pendapat",
+        type: "pg",
+        cognitive: "C3 (Aplikasi)",
+        difficulty: "Sedang",
+        stimulus: `
+          <div class="bg-amber-50/70 border border-amber-200 rounded-xl p-4">
+            <p class="text-xs sm:text-sm font-bold text-amber-900 mb-2">Simak studi kasus permasalahan fasilitas belajar di dalam kelas berikut ini!</p>
+            <p class="text-xs sm:text-sm text-gray-700 leading-relaxed">
+              Selaku ketua kelas IX-B, kamu mendapati proyektor LCD di ruang kelas sering mati mendadak dan jaringan internet sekolah tidak stabil sehingga menghambat proses pembelajaran bersama guru. Teman-teman sekelasmu berharap permasalahan fasilitas tersebut segera ditangani pihak sekolah.
+            </p>
+          </div>
+        `,
+        question: "Wujud praktik mengemukakan pendapat yang paling santun, tepat sasaran, dan bertanggung jawab dalam situasi tersebut adalah ....",
+        options: [
+          "menuliskan laporan kondisi kerusakan kelas disertai usulan perbaikan lalu memasukkannya ke kotak saran kepala sekolah",
+          "mengunggah foto kerusakan ruang kelas ke media sosial publik dengan komentar menyudutkan pihak sekolah",
+          "menarik iuran wajib kepada seluruh siswa di kelas secara sepihak untuk membeli perangkat proyektor baru",
+          "mengajak seluruh teman sekelas meninggalkan ruang belajar selama peralatan kelas belum diperbaiki"
+        ],
+        answer: [0],
+        explanation: "Menuliskan kondisi permasalahan kelas secara objektif disertai harapan/usulan menggunakan bahasa santun melalui saluran resmi sekolah (kotak saran atau audiensi dengan wali kelas/kepala sekolah) adalah praktik berpendapat yang bertanggung jawab."
+      },
+
+      // SOAL 22 (C4 - Sedang - PG)
+      {
+        id: 22,
+        subbab: "E. Praktik Mengemukakan Pendapat",
+        type: "pg",
+        cognitive: "C4 (Analisis)",
+        difficulty: "Sedang",
+        stimulus: `
+          <div class="bg-white border border-amber-200 rounded-xl p-4">
+            <p class="text-xs sm:text-sm font-bold text-amber-900 mb-2">Perhatikan cuplikan contoh surat aspirasi pelajar kepada Presiden Republik Indonesia berikut!</p>
+            <div class="p-3 rounded-xl bg-amber-50/60 border border-amber-200 text-xs sm:text-sm text-gray-700 space-y-1.5">
+              <div class="text-right text-gray-500">Yogyakarta, 19 Mei 2023</div>
+              <p><strong>Kepada Yth. Bapak Presiden Republik Indonesia</strong></p>
+              <p>Assalamu'alaikum Warahmatullahi Wabarakatuh. Bapak Presiden, terima kasih karena saya yang berasal dari keluarga sederhana tetap mendapat kesempatan belajar dan beasiswa prestasi yang sama dengan teman-teman lainnya. Saya berharap program bantuan pendidikan bagi pelajar Indonesia terus berlanjut agar kami dapat meraih cita-cita...</p>
+              <div class="text-right font-semibold text-gray-800">Hormat saya, Candra Muliawati (Pelajar SMP)</div>
+            </div>
+          </div>
+        `,
+        question: "Berdasarkan contoh surat aspirasi pelajar di atas, empat aspek utama yang harus diperhatikan saat menyampaikan pendapat melalui surat resmi adalah ....",
+        options: [
+          "sistematika penulisan surat, kesantunan pilihan bahasa, kerapian penyajian, serta kejelasan isi aspirasi",
+          "panjang halaman surat minimal lima lembar, penggunaan bahasa gaul, serta penyertaan tuntutan materi",
+          "penyamaran identitas pengirim surat, penggunaan kalimat sindiran keras, serta pengiriman tanpa alamat tujuan",
+          "pemaksaan agar permohonan dikabulkan seketika tanpa memperhatikan prosedur administrasi lembaga negara"
+        ],
+        answer: [0],
+        explanation: "Menyampaikan pendapat melalui surat resmi (baik kepada kepala sekolah maupun Presiden) harus memperhatikan sistematika surat, kesantunan bahasa, kerapian/estetika, dan kejelasan isi pesan."
+      },
+
+      // SOAL 23 (C5 - Sulit - PG)
+      {
+        id: 23,
+        subbab: "E. Praktik Mengemukakan Pendapat",
+        type: "pg",
+        cognitive: "C5 (Evaluasi)",
+        difficulty: "Sulit",
+        stimulus: `
+          <div class="bg-sky-50/70 border border-sky-200 rounded-xl p-4">
+            <p class="text-xs sm:text-sm font-bold text-sky-900 mb-2">Cermati dilema pilihan dalam kegiatan Pemilihan Ketua OSIS (Pemilos) berikut ini!</p>
+            <p class="text-xs sm:text-sm text-gray-700 leading-relaxed">
+              Dalam pemilihan ketua OSIS di sekolahmu terdapat tiga kandidat: calon pertama adalah teman sebangkumu, calon kedua adalah tetangga dekat rumahmu, dan calon ketiga adalah teman satu klub olahraga. Setelah menyimak penyampaian visi, misi, dan rencana program kerja ketiganya, kamu menilai calon ketiga memiliki program pengembangan literasi dan kebersihan sekolah yang paling realistis.
+            </p>
+          </div>
+        `,
+        question: "Keputusan paling bijak yang mencerminkan praktik mengemukakan pendapat secara dewasa dan demokratis dalam pemilihan tersebut adalah ....",
+        options: [
+          "memilih calon ketiga secara rahasia berdasarkan kualitas visi misi dan program kerja terbaik bagi kemajuan sekolah",
+          "memilih teman sebangku agar tidak merusak hubungan pertemanan sehari-hari di dalam ruang kelas",
+          "membocorkan pilihan suaramu kepada ketiga calon supaya semua merasa mendapatkan dukungan penuh",
+          "memutuskan tidak menggunakan hak pilih agar terhindar dari rasa tidak enak hati terhadap ketiga teman"
+        ],
+        answer: [0],
+        explanation: "Dalam pemilihan yang demokratis (LUBER JURDIL), penyampaian pendapat melalui hak pilih harus didasarkan pada pertimbangan objektif terhadap visi, misi, dan program kerja terbaik bagi kepentingan bersama."
+      },
+
+      // SOAL 24 (C4 - Sulit - PGK)
+      {
+        id: 24,
+        subbab: "E. Praktik Mengemukakan Pendapat",
+        type: "pgk",
+        cognitive: "C4 (Analisis)",
+        difficulty: "Sulit",
+        instructionText: "PILIHAN GANDA KOMPLEKS — Pilihlah tiga etika bermedia sosial yang paling tepat!",
+        stimulus: `
+          <div class="bg-emerald-50/70 border border-emerald-200 rounded-xl p-4">
+            <p class="text-xs sm:text-sm font-bold text-emerald-900 mb-2">Cermati gambaran tantangan menyampaikan pendapat melalui media sosial di kalangan pelajar SMP berikut!</p>
+            <p class="text-xs sm:text-sm text-gray-700 leading-relaxed">
+              Media sosial memudahkan setiap warga negara menyuarakan ide, berbagi karya, maupun memberikan tanggapan atas isu publik. Namun, tanpa kesadaran etika digital, kebebasan tersebut kerap berubah menjadi perundungan siber (<em>cyberbullying</em>) dan penyebaran informasi palsu.
+            </p>
+          </div>
+        `,
+        question: "Pilihlah tiga prinsip etika yang wajib kamu terapkan saat menyampaikan pendapat melalui media sosial!",
+        options: [
+          "Memastikan kebenaran sumber informasi terlebih dahulu sebelum membagikan ulang kepada publik (saring sebelum sharing)",
+          "Menggunakan bahasa yang sopan, objektif, dan berfokus pada gagasan tanpa menyerang pribadi atau SARA",
+          "Menghargai perbedaan pendapat pengguna lain dengan tidak melontarkan ujaran kebencian maupun caci maki",
+          "Menggunakan akun samaran agar bebas memberikan komentar pedas tanpa diketahui identitas aslinya"
+        ],
+        answer: [0, 1, 2],
+        explanation: "Pernyataan 1, 2, dan 3 adalah etika pokok berpendapat di media sosial: memverifikasi kebenaran fakta, menggunakan bahasa santun berbasis gagasan, dan menghormati perbedaan pendapat tanpa ujaran kebencian."
+      },
+
+      // SOAL 25 (C6 - Sangat Sulit - PG)
+      {
+        id: 25,
+        subbab: "E. Praktik Mengemukakan Pendapat",
+        type: "pg",
+        cognitive: "C6 (Kreasi)",
+        difficulty: "Sangat Sulit",
+        stimulus: `
+          <div class="bg-amber-50/80 border border-amber-300 rounded-xl p-4">
+            <p class="text-xs sm:text-sm font-bold text-amber-900 mb-2">Perhatikan masalah pelayanan fasilitas umum yang dihadapi warga berikut!</p>
+            <p class="text-xs sm:text-sm text-gray-700 leading-relaxed">
+              Jalan penghubung utama menuju sekolah dan pasar di suatu desa mengalami kerusakan parah dengan lubang dalam dan aspal terkelupas akibat sering tergenang air hujan, sehingga beberapa pengendara sepeda motor mengalami kecelakaan. Pengurus karang taruna dan perwakilan pelajar berencana menyusun petisi aspirasi resmi kepada pemerintah daerah.
+            </p>
+          </div>
+        `,
+        question: "Susunan draf aspirasi warga yang paling tepat dan efektif agar segera ditindaklanjuti oleh instansi pemerintah terkait adalah ....",
+        options: [
+          "memuat data lokasi ruas jalan rusak, foto dokumentasi kejadian, dampak keselamatan warga, serta usulan perbaikan segera",
+          "berisi kalimat ancaman akan menutup seluruh akses jalan desa apabila perbaikan tidak selesai dalam waktu dua hari",
+          "menuliskan keluhan singkat tanpa menyertakan nama desa maupun bukti foto agar identitas warga tetap tersembunyi",
+          "mengkritik kinerja pribadi kepala daerah dengan bahasa emosional tanpa menjelaskan titik kerusakan infrastruktur"
+        ],
+        answer: [0],
+        explanation: "Aspirasi publik yang efektif dan beradab disusun secara faktual (lokasi jelas, foto bukti, analisis dampak keselamatan) disertai usulan solusi konkret dan bahasa yang santun (C6)."
+      }
+    ];
+
+    // ==================== STATE & PENGACAKAN (FISHER-YATES) ====================
+    let questionsData = [];
+    let currentMode = 'belajar'; // 'belajar' | 'latihan'
+    let currentIndex = 0;
+    let userAnswers = [];
+    let checkedStatus = [];
+    let doubtStatus = [];
+    let isReviewMode = false;
+    let timerSeconds = 60 * 60;
+    let timerInterval = null;
+    let pendingModalAction = null;
+
+    function shuffleArray(arr) {
+      const copy = [...arr];
+      for (let i = copy.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [copy[i], copy[j]] = [copy[j], copy[i]];
+      }
+      return copy;
+    }
+
+    function prepareRandomizedQuestions() {
+      // Acak urutan soal dan posisi opsi jawaban A, B, C, D per soal sambil melacak kunci jawaban baru
+      const shuffledQs = shuffleArray(baseQuestionsData);
+      questionsData = shuffledQs.map((q) => {
+        const indexedOptions = q.options.map((text, originalIdx) => ({
+          text,
+          isCorrect: q.answer.includes(originalIdx)
+        }));
+        const shuffledOptions = shuffleArray(indexedOptions);
+        const newOptions = shuffledOptions.map(item => item.text);
+        const newAnswer = shuffledOptions
+          .map((item, newIdx) => (item.isCorrect ? newIdx : -1))
+          .filter(idx => idx !== -1);
+
+        return {
+          ...q,
+          options: newOptions,
+          answer: newAnswer
+        };
+      });
+    }
+
+    // ==================== FUNGSI NAVIGASI LAYAR ====================
+    function startQuiz(mode) {
+      prepareRandomizedQuestions();
+      currentMode = mode;
+      currentIndex = 0;
+      userAnswers = Array.from({ length: questionsData.length }, () => []);
+      checkedStatus = Array(questionsData.length).fill(false);
+      doubtStatus = Array(questionsData.length).fill(false);
+      isReviewMode = false;
+
+      document.getElementById('start-screen').classList.add('hidden');
+      document.getElementById('result-screen').classList.add('hidden');
+      document.getElementById('quiz-screen').classList.remove('hidden');
+
+      const modeBadge = document.getElementById('mode-badge');
+      const timerBox = document.getElementById('timer-box');
+      const finishBtn = document.getElementById('finish-btn');
+      const legendDoubt = document.getElementById('legend-doubt');
+      const legendEval = document.getElementById('legend-eval');
+
+      clearInterval(timerInterval);
+
+      if (mode === 'belajar') {
+        modeBadge.textContent = 'MODE BELAJAR (LANGSUNG PEMBAHASAN)';
+        modeBadge.className = 'px-3 py-1 rounded-lg text-xs font-extrabold uppercase tracking-wider bg-amber-100 text-amber-900 border border-amber-300';
+        timerBox.classList.add('hidden');
+        timerBox.classList.remove('flex');
+        finishBtn.textContent = 'Lihat Rekap Skor';
+        legendDoubt.classList.add('hidden');
+        legendEval.classList.remove('hidden');
+      } else {
+        modeBadge.textContent = 'MODE LATIHAN (SIMULASI UJIAN)';
+        modeBadge.className = 'px-3 py-1 rounded-lg text-xs font-extrabold uppercase tracking-wider bg-amber-800 text-amber-50 border border-amber-900';
+        timerSeconds = 60 * 60;
+        updateTimerDisplay();
+        timerBox.classList.remove('hidden');
+        timerBox.classList.add('flex');
+        finishBtn.textContent = 'Selesai & Kumpulkan';
+        legendDoubt.classList.remove('hidden');
+        legendEval.classList.add('hidden');
+        startTimer();
+      }
+
+      renderQuestion();
+      renderNavGrid();
+      updateProgressText();
+    }
+
+    function startTimer() {
+      clearInterval(timerInterval);
+      timerInterval = setInterval(() => {
+        timerSeconds--;
+        updateTimerDisplay();
+        if (timerSeconds <= 0) {
+          clearInterval(timerInterval);
+          submitQuiz();
+        }
+      }, 1000);
+    }
+
+    function updateTimerDisplay() {
+      const m = Math.floor(timerSeconds / 60);
+      const s = timerSeconds % 60;
+      const display = `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+      const el = document.getElementById('timer-display');
+      el.textContent = display;
+      if (timerSeconds <= 300) {
+        el.parentElement.classList.add('bg-rose-100', 'border-rose-400', 'text-rose-800');
+      } else {
+        el.parentElement.classList.remove('bg-rose-100', 'border-rose-400', 'text-rose-800');
+      }
+    }
+
+    // ==================== RENDER SOAL ====================
+    function renderQuestion() {
+      const q = questionsData[currentIndex];
+      const letters = ['A', 'B', 'C', 'D'];
+
+      // Header badges
+      document.getElementById('q-number-badge').textContent = `Soal ${currentIndex + 1} dari ${questionsData.length}`;
+      document.getElementById('q-type-badge').textContent = q.type === 'pg' ? 'Pilihan Ganda' : 'Pilihan Ganda Kompleks';
+      document.getElementById('q-cog-badge').textContent = q.cognitive;
+      document.getElementById('q-diff-badge').textContent = q.difficulty;
+
+      // Instruksi PG Kompleks
+      const pgkInst = document.getElementById('pgk-instruction');
+      const pgkInstText = document.getElementById('pgk-instruction-text');
+      if (q.type === 'pgk') {
+        pgkInst.classList.remove('hidden');
+        pgkInstText.textContent = q.instructionText || 'PILIHAN GANDA KOMPLEKS — Pilihlah lebih dari satu pernyataan yang benar!';
+      } else {
+        pgkInst.classList.add('hidden');
+      }
+
+      // Stimulus & Pertanyaan
+      document.getElementById('stimulus-container').innerHTML = q.stimulus;
+      document.getElementById('question-text').innerHTML = q.question;
+
+      // Status lock
+      const isLocked = (currentMode === 'belajar' && checkedStatus[currentIndex]) || isReviewMode;
+      const selected = userAnswers[currentIndex];
+
+      // Render Opsi
+      const optionsContainer = document.getElementById('options-container');
+      optionsContainer.innerHTML = '';
+
+      q.options.forEach((optText, idx) => {
+        const isSelected = selected.includes(idx);
+        const isCorrectOpt = q.answer.includes(idx);
+
+        let cardClass = 'option-card w-full text-left p-3.5 sm:p-4 rounded-xl border-2 flex items-start gap-3 cursor-pointer ';
+        let badgeClass = 'w-7 h-7 rounded-lg flex items-center justify-center font-extrabold text-xs shrink-0 mt-0.5 ';
+        let statusTag = '';
+
+        if (isLocked) {
+          cardClass += 'disabled-opt cursor-default ';
+          if (isCorrectOpt && isSelected) {
+            cardClass += 'bg-emerald-50 border-emerald-500 text-emerald-950';
+            badgeClass += 'bg-emerald-600 text-white';
+            statusTag = '<span class="ml-auto text-xs font-bold text-emerald-700 shrink-0">✓ Benar</span>';
+          } else if (isCorrectOpt && !isSelected) {
+            cardClass += 'bg-emerald-50/60 border-emerald-400 border-dashed text-emerald-900';
+            badgeClass += 'bg-emerald-500 text-white';
+            statusTag = '<span class="ml-auto text-xs font-bold text-emerald-700 shrink-0">Kunci Jawaban</span>';
+          } else if (!isCorrectOpt && isSelected) {
+            cardClass += 'bg-rose-50 border-rose-500 text-rose-950';
+            badgeClass += 'bg-rose-600 text-white';
+            statusTag = '<span class="ml-auto text-xs font-bold text-rose-700 shrink-0">✕ Pilihanmu</span>';
+          } else {
+            cardClass += 'bg-gray-50/70 border-gray-200 text-gray-500';
+            badgeClass += 'bg-gray-200 text-gray-600';
+          }
+        } else {
+          if (isSelected) {
+            cardClass += 'bg-amber-50 border-amber-500 text-amber-950 shadow-xs';
+            badgeClass += 'bg-amber-500 text-white';
+          } else {
+            cardClass += 'bg-white border-gray-200 hover:border-amber-400 hover:bg-amber-50/30 text-gray-800';
+            badgeClass += 'bg-amber-100 text-amber-900';
+          }
+        }
+
+        const inputIndicator = q.type === 'pg'
+          ? `<span class="${badgeClass}">${letters[idx]}</span>`
+          : `<span class="${badgeClass}">${isSelected ? '✓' : letters[idx]}</span>`;
+
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = cardClass;
+        btn.disabled = isLocked;
+        btn.onclick = () => selectOption(idx);
+        btn.innerHTML = `
+          ${inputIndicator}
+          <span class="text-xs sm:text-sm leading-relaxed font-medium">${optText}</span>
+          ${statusTag}
+        `;
+        optionsContainer.appendChild(btn);
+      });
+
+      // Tombol kontrol bawah
+      const checkBtn = document.getElementById('check-answer-btn');
+      const doubtWrap = document.getElementById('doubt-checkbox-wrap');
+      const doubtCb = document.getElementById('doubt-checkbox');
+
+      if (currentMode === 'belajar' && !isReviewMode) {
+        doubtWrap.classList.add('hidden');
+        if (!checkedStatus[currentIndex]) {
+          checkBtn.classList.remove('hidden');
+          checkBtn.disabled = selected.length === 0;
+          checkBtn.className = selected.length === 0
+            ? 'px-4 py-2.5 rounded-xl bg-gray-300 text-gray-500 font-bold text-xs sm:text-sm cursor-not-allowed'
+            : 'px-4 py-2.5 rounded-xl bg-amber-600 hover:bg-amber-700 text-white font-bold text-xs sm:text-sm shadow-sm transition cursor-pointer';
+        } else {
+          checkBtn.classList.add('hidden');
+        }
+      } else if (currentMode === 'latihan' && !isReviewMode) {
+        checkBtn.classList.add('hidden');
+        doubtWrap.classList.remove('hidden');
+        doubtCb.checked = doubtStatus[currentIndex];
+      } else {
+        checkBtn.classList.add('hidden');
+        doubtWrap.classList.add('hidden');
+      }
+
+      // Tombol Prev / Next
+      document.getElementById('prev-btn').disabled = currentIndex === 0;
+      document.getElementById('next-btn').disabled = currentIndex === questionsData.length - 1;
+
+      // Render Kotak Pembahasan
+      renderExplanationBox(isLocked);
+    }
+
+    function selectOption(optIdx) {
+      const q = questionsData[currentIndex];
+      if ((currentMode === 'belajar' && checkedStatus[currentIndex]) || isReviewMode) return;
+
+      if (q.type === 'pg') {
+        userAnswers[currentIndex] = [optIdx];
+      } else {
+        const current = [...userAnswers[currentIndex]];
+        const pos = current.indexOf(optIdx);
+        if (pos > -1) {
+          current.splice(pos, 1);
+        } else {
+          current.push(optIdx);
+        }
+        current.sort((a, b) => a - b);
+        userAnswers[currentIndex] = current;
+      }
+
+      renderQuestion();
+      renderNavGrid();
+      updateProgressText();
+    }
+
+    function checkCurrentAnswer() {
+      if (userAnswers[currentIndex].length === 0) return;
+      checkedStatus[currentIndex] = true;
+      renderQuestion();
+      renderNavGrid();
+    }
+
+    function toggleDoubt() {
+      doubtStatus[currentIndex] = document.getElementById('doubt-checkbox').checked;
+      renderNavGrid();
+    }
+
+    function isAnswerCorrect(index) {
+      const q = questionsData[index];
+      const u = userAnswers[index];
+      if (u.length !== q.answer.length) return false;
+      const sortedU = [...u].sort((a, b) => a - b);
+      const sortedA = [...q.answer].sort((a, b) => a - b);
+      return sortedU.every((val, i) => val === sortedA[i]);
+    }
+
+    function renderExplanationBox(show) {
+      const box = document.getElementById('explanation-box');
+      if (!show) {
+        box.classList.add('hidden');
+        return;
+      }
+
+      const q = questionsData[currentIndex];
+      const correct = isAnswerCorrect(currentIndex);
+      const letters = ['A', 'B', 'C', 'D'];
+      const keyLabels = q.answer.map(i => letters[i]).join(', ');
+      const userLabels = userAnswers[currentIndex].length > 0
+        ? userAnswers[currentIndex].map(i => letters[i]).join(', ')
+        : 'Tidak dijawab';
+
+      box.classList.remove('hidden');
+      if (correct) {
+        box.className = 'mt-5 rounded-2xl p-4 sm:p-5 border-2 bg-emerald-50/80 border-emerald-400 text-emerald-950';
+        document.getElementById('exp-status-icon').textContent = '🎉';
+        document.getElementById('exp-status-title').textContent = 'Jawabanmu BENAR!';
+        document.getElementById('exp-key-text').className = 'text-xs sm:text-sm font-bold text-emerald-800 mb-2';
+      } else {
+        box.className = 'mt-5 rounded-2xl p-4 sm:p-5 border-2 bg-rose-50/80 border-rose-400 text-rose-950';
+        document.getElementById('exp-status-icon').textContent = '💡';
+        document.getElementById('exp-status-title').textContent = 'Jawabanmu KURANG TEPAT';
+        document.getElementById('exp-key-text').className = 'text-xs sm:text-sm font-bold text-rose-800 mb-2';
+      }
+
+      document.getElementById('exp-key-text').textContent = `Kunci Jawaban: ${keyLabels} | Jawabanmu: ${userLabels}`;
+      document.getElementById('exp-detail-text').innerHTML = `<strong>Pembahasan:</strong> ${q.explanation}`;
+    }
+
+    // ==================== NAVIGASI NOMOR ====================
+    function renderNavGrid() {
+      const grid = document.getElementById('nav-grid');
+      grid.innerHTML = '';
+
+      questionsData.forEach((q, idx) => {
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.textContent = idx + 1;
+        btn.onclick = () => {
+          currentIndex = idx;
+          renderQuestion();
+          renderNavGrid();
+        };
+
+        const isCurrent = idx === currentIndex;
+        const isAnswered = userAnswers[idx].length > 0;
+        const isEvaluated = (currentMode === 'belajar' && checkedStatus[idx]) || isReviewMode;
+
+        let cls = 'h-9 rounded-xl font-bold text-xs transition flex items-center justify-center cursor-pointer ';
+
+        if (isCurrent) {
+          cls += 'ring-2 ring-offset-1 ring-amber-600 ';
+        }
+
+        if (isEvaluated) {
+          if (isAnswerCorrect(idx)) {
+            cls += 'bg-emerald-500 text-white';
+          } else {
+            cls += 'bg-rose-500 text-white';
+          }
+        } else if (currentMode === 'latihan' && doubtStatus[idx]) {
+          cls += 'bg-yellow-300 border border-yellow-600 text-yellow-950';
+        } else if (isAnswered) {
+          cls += 'bg-amber-100 border border-amber-400 text-amber-950';
+        } else if (isCurrent) {
+          cls += 'bg-amber-500 text-white';
+        } else {
+          cls += 'bg-gray-100 border border-gray-300 text-gray-700 hover:bg-amber-50';
+        }
+
+        btn.className = cls;
+        grid.appendChild(btn);
+      });
+    }
+
+    function updateProgressText() {
+      const answeredCount = userAnswers.filter(a => a.length > 0).length;
+      document.getElementById('progress-text').textContent = `Terjawab: ${answeredCount} / ${questionsData.length}`;
+    }
+
+    function prevQuestion() {
+      if (currentIndex > 0) {
+        currentIndex--;
+        renderQuestion();
+        renderNavGrid();
+      }
+    }
+
+    function nextQuestion() {
+      if (currentIndex < questionsData.length - 1) {
+        currentIndex++;
+        renderQuestion();
+        renderNavGrid();
+      }
+    }
+
+    // ==================== MODAL & PENYELESAIAN ====================
+    function openSwitchModal() {
+      document.getElementById('modal-title').textContent = 'Ganti Mode atau Reset Kuis?';
+      document.getElementById('modal-message').textContent = 'Progres jawaban saat ini akan diatur ulang dan urutan soal serta opsi jawaban akan diacak kembali saat sesi dimulai. Lanjutkan?';
+      pendingModalAction = () => {
+        clearInterval(timerInterval);
+        resetToHome();
+      };
+      document.getElementById('custom-modal').classList.remove('hidden');
+    }
+
+    function openFinishModal() {
+      const unanswered = userAnswers.filter(a => a.length === 0).length;
+      document.getElementById('modal-title').textContent = 'Selesaikan & Lihat Hasil?';
+      document.getElementById('modal-message').textContent = unanswered > 0
+        ? `Masih terdapat ${unanswered} soal yang belum kamu jawab. Apakah kamu yakin ingin menyelesaikan sesi sekarang?`
+        : 'Semua soal telah kamu jawab. Klik "Ya, Lanjutkan" untuk melihat skor akhir dan analisis pembahasan.';
+      pendingModalAction = () => {
+        submitQuiz();
+      };
+      document.getElementById('custom-modal').classList.remove('hidden');
+    }
+
+    function closeModal() {
+      document.getElementById('custom-modal').classList.add('hidden');
+      pendingModalAction = null;
+    }
+
+    document.getElementById('modal-confirm-btn').onclick = function () {
+      if (pendingModalAction) {
+        const fn = pendingModalAction;
+        closeModal();
+        fn();
+      }
+    };
+
+    function submitQuiz() {
+      clearInterval(timerInterval);
+      isReviewMode = true;
+
+      let totalCorrect = 0;
+      let pgCorrect = 0;
+      let pgkCorrect = 0;
+
+      const subbabStats = {};
+
+      questionsData.forEach((q, idx) => {
+        if (!subbabStats[q.subbab]) {
+          subbabStats[q.subbab] = { total: 0, correct: 0 };
+        }
+        subbabStats[q.subbab].total++;
+
+        if (isAnswerCorrect(idx)) {
+          totalCorrect++;
+          subbabStats[q.subbab].correct++;
+          if (q.type === 'pg') pgCorrect++;
+          else pgkCorrect++;
+        }
+      });
+
+      const score = Math.round((totalCorrect / questionsData.length) * 100);
+      let predicate = 'Perlu Bimbingan';
+      if (score >= 90) predicate = 'Sangat Baik (Mahir)';
+      else if (score >= 75) predicate = 'Baik (Cakap)';
+      else if (score >= 60) predicate = 'Cukup (Layak)';
+
+      document.getElementById('final-score').textContent = score;
+      document.getElementById('final-predicate').textContent = predicate;
+      document.getElementById('stat-correct').textContent = totalCorrect;
+      document.getElementById('stat-wrong').textContent = questionsData.length - totalCorrect;
+      document.getElementById('stat-pg').textContent = `${pgCorrect}/18`;
+      document.getElementById('stat-pgk').textContent = `${pgkCorrect}/7`;
+
+      // Render analisis per subbab
+      const topicContainer = document.getElementById('topic-analysis');
+      topicContainer.innerHTML = '';
+
+      Object.keys(subbabStats).sort().forEach((subbab) => {
+        const data = subbabStats[subbab];
+        const pct = Math.round((data.correct / data.total) * 100);
+        const row = document.createElement('div');
+        row.innerHTML = `
+          <div class="flex justify-between font-semibold text-gray-800 mb-1">
+            <span>${subbab}</span>
+            <span>${data.correct}/${data.total} Soal (${pct}%)</span>
+          </div>
+          <div class="w-full h-2.5 bg-amber-200/70 rounded-full overflow-hidden">
+            <div class="h-full bg-amber-600 rounded-full" style="width: ${pct}%"></div>
+          </div>
+        `;
+        topicContainer.appendChild(row);
+      });
+
+      document.getElementById('quiz-screen').classList.add('hidden');
+      document.getElementById('result-screen').classList.remove('hidden');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function enterReviewMode() {
+      isReviewMode = true;
+      currentIndex = 0;
+
+      document.getElementById('result-screen').classList.add('hidden');
+      document.getElementById('quiz-screen').classList.remove('hidden');
+
+      const modeBadge = document.getElementById('mode-badge');
+      modeBadge.textContent = 'MODE TINJAUAN PEMBAHASAN LENGKAP';
+      modeBadge.className = 'px-3 py-1 rounded-lg text-xs font-extrabold uppercase tracking-wider bg-emerald-100 text-emerald-900 border border-emerald-300';
+
+      document.getElementById('timer-box').classList.add('hidden');
+      document.getElementById('timer-box').classList.remove('flex');
+      document.getElementById('legend-doubt').classList.add('hidden');
+      document.getElementById('legend-eval').classList.remove('hidden');
+
+      renderQuestion();
+      renderNavGrid();
+    }
+
+    function resetToHome() {
+      clearInterval(timerInterval);
+      isReviewMode = false;
+      document.getElementById('quiz-screen').classList.add('hidden');
+      document.getElementById('result-screen').classList.add('hidden');
+      document.getElementById('start-screen').classList.remove('hidden');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
